@@ -9,8 +9,18 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+interface SiteMetaType {
+  site: {
+    siteMetadata: {
+      title?: string;
+      description?: string;
+      author: string;
+    };
+  };
+}
+
 const Layout = ({ children }: LayoutProps) => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<SiteMetaType>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {

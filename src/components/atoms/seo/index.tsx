@@ -7,8 +7,18 @@ interface SeoProps {
   title?: string;
 }
 
+interface SiteMetaType {
+  site: {
+    siteMetadata: {
+      title?: string;
+      description?: string;
+      author: string;
+    };
+  };
+}
+
 function Seo({ description, title }: SeoProps) {
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<SiteMetaType>(
     graphql`
       query {
         site {
