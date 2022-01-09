@@ -26,13 +26,6 @@ module.exports = {
 
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `contents`,
-        path: `${__dirname}/contents`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: `https://probrain.gatsbyjs.io/`, // TODO:: 이후 변경
@@ -97,4 +90,4 @@ module.exports = {
       },
     },
   ],
-}
+};

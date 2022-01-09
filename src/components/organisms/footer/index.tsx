@@ -1,14 +1,13 @@
 import * as React from 'react';
+import SocialIcons from 'components/molecules/socialIcons';
+import './footer.scss';
 
 const Footer = () => (
-  <footer
-    style={{
-      marginTop: `2rem`,
-    }}
-  >
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.com">Gatsby</a>
+  <footer className="footer">
+    <div className="footer__inner">
+      &copy; {new Date().getFullYear()} PROBRAIN
+      <SocialIcons />
+    </div>
   </footer>
 );
 
