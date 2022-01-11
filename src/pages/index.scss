@@ -63,3 +63,31 @@ $fontSize-small: 14px;
     }
   }
 }
+
+.text {
+  overflow: hidden;
+  &__inner {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__main {
+    font-size: 200px;
+    font-weight: 700;
+    transform: translateX(-100vw);
+    transition: all 1.5s ease-out;
+  }
+  &__sub {
+    width: fit-content;
+    float: right;
+    transform: translateX(50vw);
+    transition: all 1.5s ease-out;
+  }
+  &.active {
+    .text__main,
+    .text__sub {
+      transform: translateX(0px);
+    }
+  }
+}
