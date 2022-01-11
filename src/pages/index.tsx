@@ -3,7 +3,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import './index.scss';
 
 import Layout from 'components/layout';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const IndexPage = () => (
   <Layout>
     <section className="intro">

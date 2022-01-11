@@ -25,26 +25,25 @@ $fontSize-small: 14px;
       width: 45%;
       border-radius: 20px;
       padding: 30px;
-      background-color: var(--colorBg10);
       box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
       &:hover {
         transition: all 0.3s ease;
         transform: translateY(-5px);
         box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
       }
-      .card__title {
+      &__title {
         font-size: 26px;
         font-weight: 500;
       }
-      .card__subtitle {
+      &__subtitle {
         color: $sub-color;
       }
-      .card__subcontent {
+      &__subcontent {
         margin-top: 10px;
         color: $sub-color;
         font-size: $fontSize-small;
       }
-      .card__content {
+      &__content {
         margin-top: 30px;
       }
     }
