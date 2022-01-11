@@ -8,10 +8,11 @@ const IndexPage = () => (
     <section className="intro">
       <div className="intro__inner">
         <div className="intro__title">
-          <h3>
+          <p className="intro__title--main">
             프로브레인과 함께 성장할 <br />
             멋진 동료를 찾고 있어요
-          </h3>
+          </p>
+          <p className="intro__title--sub">2022년 PROBRAIN</p>
         </div>
         <div className="intro__content">
           <div className="card">
