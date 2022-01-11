@@ -23,7 +23,6 @@ const IndexPage = () => (
               repellat reiciendis autem architecto. Consequatur unde eius sit,
               minus consequuntur magnam.
             </div>
-            <div className="card__subcontent">this is sub content</div>
           </div>
           <div className="card">
             <div className="card__title"> PROBRAIN TMI2</div>
@@ -38,7 +37,6 @@ const IndexPage = () => (
               maxime atque provident ips architecto. Consequatur unde eius sit,
               minus consequuntur magnam.
             </div>
-            <div className="card__subcontent">this is sub content</div>
           </div>
         </div>
       </div>
