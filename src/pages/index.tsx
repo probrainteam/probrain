@@ -1,9 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import './index.scss';
-
 import Layout from 'components/layout';
+import debounce from 'lodash/debounce';
 
+export function useScroll() {
+  const [scrollY, setScrollY] = useState<number>(0);
+
+  const listener = () => {
+    setScrollY(window.pageYOffset);
+  };
+
+  const delay = 15;
+
+  useEffect(() => {
+    window.addEventListener('scroll', debounce(listener, delay));
+    return () => window.removeEventListener('scroll', listener);
+  });
+
+  return {
+    scrollY,
+  };
+}
+const LogoComponent = () => {
+  const { scrollY } = useScroll();
+  return (
+    <section className={`text ${scrollY > 200 ? 'active' : ''}`}>
+      <div className="text__inner">
+        <div className="text__main">PROBRAIN</div>
+        <div className="text__sub">professional brain group</div>
+      </div>
+    </section>
+  );
+};
 const IndexPage = () => (
   <Layout>
     <section className="intro">
@@ -43,23 +72,8 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="text">
-      <div className="text__inner">
-        <div className="text__main">PROBRAIN</div>
-        <div className="text__sub">professional brain group</div>
-      </div>
-    </section>
-    {/* <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p> */}
-    {/* <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={['auto', 'webp', 'avif']}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    /> */}
+    <LogoComponent />
+    <section ></section>
   </Layout>
 );
 
