@@ -1,0 +1,65 @@
+$sub-color: #525252;
+$fontSize-small: 14px;
+.intro {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    padding: 100px 0;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    align-items: center;
+  }
+  .intro__title {
+    margin-bottom: 100px;
+    width: fit-content;
+    &--main {
+      font-size: 2.3em;
+      text-align: center;
+      font-weight: 500;
+    }
+    &--sub {
+      font-size: 0.5em;
+      color: $sub-color;
+      text-align: right;
+    }
+    @media screen and (max-width: 425px) {
+      //대형 휴대기기 크기 425px
+      br {
+        display: none;
+      }
+    }
+  }
+  .intro__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding: 20px;
+    .card {
+      box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+      border-radius: 20px;
+      padding: 30px;
+      &:hover {
+        transition: all 0.3s ease;
+        transform: translateY(-5px);
+        box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
+      }
+      &__title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+      &__subtitle {
+        color: $sub-color;
+      }
+      &__content {
+        margin-top: 30px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, minmax(auto, 500px));
+      justify-content: center;
+      row-gap: 30px;
+    }
+  }
+}
