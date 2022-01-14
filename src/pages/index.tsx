@@ -16,10 +16,11 @@ const DetectScrollTextComponent: FunctionComponent = () => {
     };
   }, [scrollRef.current]);
   const yScrollEvent = () => {
-    const scroll = scrollRef.current.getBoundingClientRect();
+    const scroll: DOMRect = scrollRef.current.getBoundingClientRect();
     // console.log(scroll.top, window.innerHeight);
     if (scroll.top < window.innerHeight - 150) {
       setIsShow(true);
+      console.log(typeof scroll.top);
     } else {
       setIsShow(false);
     }
@@ -46,11 +47,7 @@ const DetectScrollCardComponent: FunctionComponent = ({ children }) => {
     };
   }, [scrollRef.current]);
   const yScrollEvent = () => {
-    const scroll = scrollRef.current.getBoundingClientRect();
-    // console.log('top', scroll.top);
-    // setHideElement(scroll.top <= -100);
-    // console.log(scroll.top, window.innerHeight);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    const scroll: DOMRect = scrollRef.current.getBoundingClientRect();
     if (scroll.top < window.innerHeight - 150) {
       //   console.log('show');
       setIsShow(true);
@@ -68,7 +65,6 @@ const DetectScrollCardComponent: FunctionComponent = ({ children }) => {
 };
 
 const IndexPage = () => {
-  // const { scrollY } = useScroll();
   return (
     <Layout>
       <section className="intro">
@@ -108,8 +104,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
-      <DetectScrollTextComponent></DetectScrollTextComponent>
+      <DetectScrollTextComponent />
       <section className="c1">
         <div className="c1__inner">
           <div className="c1__content">
