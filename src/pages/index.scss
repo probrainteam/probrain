@@ -1,15 +1,28 @@
 $sub-color: #525252;
 $fontSize-small: 14px;
+@mixin inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: calc(100vh - 80px);
+  align-items: center;
+}
+@mixin card {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 30px;
+  &:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-5px);
+    box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
+  }
+}
 .intro {
   &__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1024px;
-    padding: 100px 0;
-    margin: 0 auto;
-    height: calc(100vh - 80px);
-    align-items: center;
+    @include inner;
   }
   .intro__title {
     margin-bottom: 100px;
@@ -37,14 +50,7 @@ $fontSize-small: 14px;
     column-gap: 30px;
     padding: 20px;
     .card {
-      box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
-      border-radius: 20px;
-      padding: 30px;
-      &:hover {
-        transition: all 0.3s ease;
-        transform: translateY(-5px);
-        box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
-      }
+      @include card;
       &__title {
         font-size: 26px;
         font-weight: 500;
@@ -93,6 +99,25 @@ $fontSize-small: 14px;
     .text__sub {
       opacity: 1;
       transform: translateX(0px);
+    }
+  }
+}
+
+.c1 {
+  &__inner {
+    @include inner;
+  }
+  &__content {
+    .c1__card {
+      @include card;
+      margin: 40px 0;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 1.8s ease-out;
+      &.active {
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
   }
 }
