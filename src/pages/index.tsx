@@ -17,10 +17,8 @@ const DetectScrollTextComponent: FunctionComponent = () => {
   }, [scrollRef.current]);
   const yScrollEvent = () => {
     const scroll: DOMRect = scrollRef.current.getBoundingClientRect();
-    // console.log(scroll.top, window.innerHeight);
     if (scroll.top < window.innerHeight - 150) {
       setIsShow(true);
-      console.log(typeof scroll.top);
     } else {
       setIsShow(false);
     }
@@ -49,10 +47,8 @@ const DetectScrollCardComponent: FunctionComponent = ({ children }) => {
   const yScrollEvent = () => {
     const scroll: DOMRect = scrollRef.current.getBoundingClientRect();
     if (scroll.top < window.innerHeight - 150) {
-      //   console.log('show');
       setIsShow(true);
     } else {
-      //   console.log('hidden');
       setIsShow(false);
     }
   };
