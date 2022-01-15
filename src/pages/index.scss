@@ -171,6 +171,30 @@ $media-mobile: 480px;
       font-size: 1.5em;
     }
   }
+  @media screen and (max-width: 1200px) {
+    &__main {
+      font-size: 12em;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &__main {
+      font-size: 11em;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 30px 0;
+    &__main {
+      font-size: 9em;
+    }
+    &__sub {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .text__main {
+      font-size: 3.8em;
+    }
+  }
 }
 
 .c1 {
@@ -190,6 +214,15 @@ $media-mobile: 480px;
         opacity: 1;
         transform: translateY(0px);
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .c1__card {
+      margin: 0;
+      font-size: 15px;
+    }
+    .c1__card + .c1__card {
+      margin-top: 20px;
     }
   }
 }
