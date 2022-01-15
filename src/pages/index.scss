@@ -1,9 +1,9 @@
 $sub-color: #525252;
 $fontSize-small: 14px;
-$media-pc-large: 1200px;
-$media-pc: 1024px;
-$media-tablet: 768px;
-$media-mobile: 480px;
+// $media-pc-large: 1200px;
+// $media-pc: 1024px;
+// $media-tablet: 768px;
+// $media-mobile: 480px;
 
 @mixin inner {
   width: 100%;
@@ -111,7 +111,7 @@ $media-mobile: 480px;
   }
   @media screen and (max-width: 480px) {
     //대형 휴대기기 크기 425px
-    .intro__title {
+    &__title {
       &--main {
         font-size: 1.7em;
       }
@@ -122,11 +122,9 @@ $media-mobile: 480px;
         display: none;
       }
     }
-    .intro__content {
+    &__content {
       padding: 10px;
       row-gap: 20px;
-      .card {
-      }
     }
   }
 }
@@ -191,7 +189,7 @@ $media-mobile: 480px;
     }
   }
   @media screen and (max-width: 480px) {
-    .text__main {
+    &__main {
       font-size: 3.8em;
     }
   }
@@ -232,12 +230,18 @@ $media-mobile: 480px;
     @include flexInner;
     height: 200px;
   }
-  button.registration__btn {
+  &__btn {
     padding: 15px 45px;
     font-size: 18px;
     background: #eeeeee;
     border: 1px solid #eeeeee;
     border-radius: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    &__btn {
+      padding: 10px 35px;
+      font-size: 15px;
+    }
   }
 }
 .intro-junior {
@@ -266,5 +270,24 @@ $media-mobile: 480px;
     background-color: white;
     border-radius: 30px;
     font-size: 16px;
+  }
+  @media screen and (max-width: 1024px) {
+    &__left {
+      padding: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__title {
+      font-size: 22px;
+    }
+    &__btn {
+      padding: 10px 40px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
   }
 }
