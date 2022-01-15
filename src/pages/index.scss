@@ -1,13 +1,15 @@
 $sub-color: #525252;
 $fontSize-small: 14px;
 @mixin inner {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 1024px;
-  justify-content: center;
   margin: 0 auto;
+}
+@mixin flexInner {
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 @mixin card {
   box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
@@ -22,6 +24,7 @@ $fontSize-small: 14px;
 .intro {
   &__inner {
     @include inner;
+    @include flexInner;
     height: calc(100vh - 80px);
   }
   .intro__title {
@@ -107,6 +110,7 @@ $fontSize-small: 14px;
 .c1 {
   &__inner {
     @include inner;
+    @include flexInner;
   }
   &__content {
     .c1__card {
@@ -120,5 +124,49 @@ $fontSize-small: 14px;
         transform: translateX(0px);
       }
     }
+  }
+}
+.registration {
+  &__inner {
+    @include inner;
+    @include flexInner;
+    height: 200px;
+  }
+  button.registration__btn {
+    padding: 15px 45px;
+    font-size: 18px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 40px;
+  }
+}
+.intro-junior {
+  background-color: #4caeea;
+  &__inner {
+    @include inner;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+  }
+  &__left {
+    padding: 100px;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    // margin-bottom: 30px;
+  }
+  &__sub-title {
+    font-weight: 300;
+    font-size: 14px;
+    // margin-bottom: 30px;
+    margin: 30px 0;
+  }
+  &__btn {
+    padding: 20px 70px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 16px;
   }
 }

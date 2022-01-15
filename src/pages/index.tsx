@@ -118,6 +118,32 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <section className="registration">
+        <div className="registration__inner">
+          <button className="registration__btn">가입 신청</button>
+        </div>
+      </section>
+      <section className="intro-junior">
+        <div className="intro-junior__inner">
+          <div className="intro-junior__left">
+            <div className="intro-junior__title">
+              프로브레인과 함께할 <br />
+              멋진 동료를 찾고있어요
+            </div>
+            <div className="intro-junior__sub-title">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              dignissimos vm, dolor sit amet consectetur adipisicing elit. Ullam
+              dignissimos v
+            </div>
+            <div>
+              <button className="intro-junior__btn">PROB junior 소개</button>
+            </div>
+          </div>
+          <div className="intro-junior__right">
+            <div className="intro-junior__logo"></div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
