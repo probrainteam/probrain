@@ -46,7 +46,10 @@ const IndexPage = () => {
               프로브레인과 함께 성장할 <br />
               멋진 동료를 찾고 있어요
             </p>
-            <p className="intro__title--sub">2022년 PROBRAIN</p>
+            <p className="intro__title--sub">
+              프로브레인 어쩌고 저쩌고 프로브레인 어쩌고 저쩌고
+              프로브레인화이팅!
+            </p>
           </div>
           <div className="intro__content">
             <div className="card">
