@@ -1,0 +1,27 @@
+@import '../../../pages/mixin.scss';
+.welcome {
+  &__inner {
+    @include inner;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  &__title {
+    font-size: 48px;
+    &--light {
+      display: inline;
+      & + & {
+        padding-left: 10px;
+      }
+    }
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__image img {
+    width: 100%;
+  }
+}

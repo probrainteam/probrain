@@ -1,0 +1,39 @@
+@import '../../../pages/mixin.scss';
+.about,
+.activity,
+.tmi {
+  @include section-title;
+  &__inner {
+    @include inner;
+  }
+}
+
+.about {
+  &__content {
+    @include grid-2;
+    justify-items: right;
+  }
+}
+.activity {
+  &__content {
+    background-image: url('images/Vector.png');
+    background-size: cover;
+  }
+  .card {
+    margin: 100px 0;
+    img {
+      min-width: 350px;
+    }
+  }
+}
+.tmi {
+  .tmi__content {
+    @include grid-2;
+  }
+  .card {
+    &__detail--sub {
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+  }
+}
