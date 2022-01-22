@@ -144,6 +144,11 @@ $fontSize-small: 14px;
     }
   }
 }
+.large-img {
+  background-image: url('images/exImg.png');
+  background-size: cover;
+  height: 400px;
+}
 // .intro {
 //   &__inner {
 //     @include inner;

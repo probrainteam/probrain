@@ -200,6 +200,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <section className="large-img"></section>
       {/* <section className="intro">
         <div className="intro__inner">
           <div className="intro__title">
