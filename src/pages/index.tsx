@@ -3,11 +3,10 @@ import React, { useState, useEffect, FunctionComponent, useRef } from 'react';
 import './index.scss';
 import Layout from 'components/layout';
 import ScrollComponent from 'components/molecules/Scroll';
-
 const IndexPage = () => {
   return (
     <Layout>
-      <section className="intro">
+      {/* <section className="intro">
         <div className="intro__inner">
           <div className="intro__title">
             <p className="intro__title--main">
@@ -114,7 +113,7 @@ const IndexPage = () => {
             <div className="intro-junior__logo"></div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };
