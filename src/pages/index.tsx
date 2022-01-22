@@ -2,6 +2,13 @@ import React, { useState, useEffect, FunctionComponent, useRef } from 'react';
 // import { StaticImage } from 'gatsby-plugin-image';
 import './index.scss';
 import Layout from 'components/layout';
+import mainImage from 'images/mainImage.png';
+import probrainLogoBlue from 'images/probrainLogo-blue.png';
+import Education from 'images/Education.png';
+import HomecomingDay from 'images/HomecomingDay.png';
+import MT from 'images/MT.png';
+import exImg from 'images/exImg.png';
+
 import ScrollComponent from 'components/molecules/Scroll';
 const IndexPage = () => {
   return (
@@ -20,7 +27,7 @@ const IndexPage = () => {
           </div>
           <div className="welcome__image">
             {/* picture? */}
-            {/* <img src={require('/images/mainImage.png').default} alt="" /> */}
+            <img src={mainImage} alt="mainImage" />
           </div>
         </div>
       </section>
@@ -45,12 +52,66 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="card__img">
-                <div className="img"></div>
+                <img src={probrainLogoBlue} alt="probrain" />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="activity">
+        <div className="activity__inner">
+          <div className="activity__title">
+            <div className="activity__title--main">ACTIVITY</div>
+            <div className="activity__title--sub">
+              PROBRAIN 대표 활동들을 소개해요
+            </div>
+          </div>
+          <div className="card-list">
+            <div className="card card--left">
+              <div className="card__img">
+                <img src={MT} alt="MT" />
+              </div>
+              <div className="card__text">
+                <div className="card__title">01 Membership Training (MT)</div>
+                <div className="card__detail">
+                  내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의
+                  공통된 주제에 대해서 이야기를 나눌 수 있는 정기적인 세미나를
+                  개최해요. 월 별로 정해지는 주제에 대해서 개인적으로 공부하고
+                  준비해서 발표하는 시간을 가져봅시다.
+                </div>
+              </div>
+            </div>
+            <div className="card card--right">
+              <div className="card__text">
+                <div className="card__title">02 Homecoming day</div>
+                <div className="card__detail">
+                  내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의
+                  공통된 주제에 대해서 이야기를 나눌 수 있는 정기적인 세미나를
+                  개최해요. 월 별로 정해지는 주제에 대해서 개인적으로 공부하고
+                  준비해서 발표하는 시간을 가져봅시다.
+                </div>
+              </div>
+              <div className="card__img">
+                <img src={HomecomingDay} alt="HomecomingDay" />
+              </div>
+            </div>
+            <div className="card card--left">
+              <div className="card__img">
+                <img src={Education} alt="Education" />
+              </div>
+              <div className="card__text">
+                <div className="card__title">03 Web Education</div>
+                <div className="card__detail">
+                  내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의
+                  공통된 주제에 대해서 이야기를 나눌 수 있는 정기적인 세미나를
+                  개최해요. 월 별로 정해지는 주제에 대해서 개인적으로 공부하고
+                  준비해서 발표하는 시간을 가져봅시다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <section className="intro">
         <div className="intro__inner">
           <div className="intro__title">

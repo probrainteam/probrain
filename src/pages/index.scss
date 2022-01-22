@@ -18,7 +18,7 @@ $fontSize-small: 14px;
     max-width: 320px;
   }
 }
-@mixin flexInner {
+@mixin flex-inner-column {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,6 +31,31 @@ $fontSize-small: 14px;
   &__title--main {
     font-size: 36px;
     font-weight: 500;
+  }
+}
+@mixin grid-card-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  &__title {
+    font-size: 24px;
+    color: #4caeea;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__detail {
+    font-size: 14px;
+  }
+  &--left {
+    img {
+      float: left;
+    }
+  }
+  &--right {
+    img {
+      float: right;
+    }
   }
 }
 .btn {
@@ -64,50 +89,40 @@ $fontSize-small: 14px;
     }
   }
   &__image {
-    // test용
-    width: 100%;
-    height: 600px;
-    background-color: antiquewhite;
+    object-fit: cover;
   }
 }
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
-  // margin: 60px 0;
-  & + & {
-    margin: 150px 0;
-  }
-  .card__title {
-    font-size: 24px;
-    color: #4caeea;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .card__detail {
-    font-size: 14px;
-  }
-  .img {
-    height: 100%;
-    background-color: antiquewhite;
-  }
-}
+// .card {
+//   & + & {
+//     margin: 150px 0;
+//   }
+// }
 .about {
   &__inner {
     @include inner;
   }
   @include section-title;
+  .card {
+    @include grid-card-2;
+  }
 }
-// @mixin card {
-//   box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
-//   border-radius: 20px;
-//   padding: 30px;
-//   &:hover {
-//     transition: all 0.3s ease;
-//     transform: translateY(-5px);
-//     box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
-//   }
-// }
+.activity {
+  &__inner {
+    @include inner;
+  }
+  @include section-title;
+  .card-list {
+    background-image: url('images/Vector.png');
+    background-size: cover;
+  }
+  .card {
+    @include grid-card-2;
+    margin: 100px 0;
+    img {
+      min-width: 350px;
+    }
+  }
+}
 
 // .intro {
 //   &__inner {
