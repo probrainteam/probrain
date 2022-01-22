@@ -33,11 +33,7 @@ $fontSize-small: 14px;
     font-weight: 500;
   }
 }
-@mixin grid-card-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
-  align-items: center;
+@mixin card {
   &__title {
     font-size: 24px;
     color: #4caeea;
@@ -45,8 +41,14 @@ $fontSize-small: 14px;
     margin-bottom: 20px;
   }
   &__detail {
-    font-size: 14px;
+    // font-size: 14px;
   }
+}
+@mixin grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  align-items: center;
   &--left {
     img {
       float: left;
@@ -103,7 +105,8 @@ $fontSize-small: 14px;
   }
   @include section-title;
   .card {
-    @include grid-card-2;
+    @include grid-2;
+    @include card;
   }
 }
 .activity {
@@ -116,14 +119,31 @@ $fontSize-small: 14px;
     background-size: cover;
   }
   .card {
-    @include grid-card-2;
+    @include grid-2;
+    @include card;
     margin: 100px 0;
     img {
       min-width: 350px;
     }
   }
 }
-
+.tmi {
+  &__inner {
+    @include inner;
+  }
+  @include section-title;
+  .tmi__content {
+    display: grid;
+    @include grid-2;
+  }
+  .card {
+    @include card;
+    &__detail--sub {
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+  }
+}
 // .intro {
 //   &__inner {
 //     @include inner;
