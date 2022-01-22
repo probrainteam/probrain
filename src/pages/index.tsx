@@ -12,10 +12,11 @@ import ScrollComponent from 'components/molecules/Scroll';
 import Introduce from 'components/organisms/introduce';
 import Welcome from 'components/organisms/welcome';
 import Card, { CardLeft, CardRight } from 'components/molecules/card';
+import Registration from 'components/organisms/registration';
 const IndexPage = () => {
   return (
     <Layout>
-      <Welcome></Welcome>
+      <Welcome />
       <Introduce
         className="about"
         title="ABOUT"
@@ -122,14 +123,11 @@ const IndexPage = () => {
       </Introduce>
 
       <section className="large-img"></section>
-      <section className="together">
-        <div className="together__inner">
-          <div className="together__title">
-            PRORAIN 과 함께 하고 싶으신가요?
-          </div>
-          <button className="btn btn--grey">PROBRAIN 가입 신청</button>
-        </div>
-      </section>
+      <Registration
+        title="  PRORAIN 과 함께 하고 싶으신가요?"
+        btn={<button className="btn btn--grey">PROBRAIN 가입 신청</button>}
+        className="together"
+      />
     </Layout>
   );
 };

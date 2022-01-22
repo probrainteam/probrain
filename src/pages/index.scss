@@ -17,16 +17,7 @@ $fontSize-small: 14px;
   margin-top: 200px;
   height: 400px;
 }
-.together {
-  &__inner {
-    @include inner;
-  }
-  text-align: center;
-  .together__title {
-    font-size: 40px;
-    margin: 50px 0;
-  }
-}
+
 // .intro {
 //   &__inner {
 //     @include inner;

@@ -8,4 +8,14 @@
   &__detail {
     // font-size: 14px;
   }
+  &--left {
+    img {
+      float: left;
+    }
+  }
+  &--right {
+    img {
+      float: right;
+    }
+  }
 }
