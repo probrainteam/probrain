@@ -24,6 +24,33 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <section className="about">
+        <div className="about__inner">
+          <div className="about__title">
+            <div className="about__title--main">ABOUT</div>
+            <div className="about__title--sub">
+              PROBRAIN은 어떤 동아리일까요?
+            </div>
+          </div>
+          <div className="about__content">
+            <div className="card">
+              <div className="card__text">
+                <div className="card__title">웹 개발 동아리</div>
+                <div className="card__detail">
+                  개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
+                  사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
+                  이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
+                  카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고
+                  자유롭게 이야기를 나눠보세요.
+                </div>
+              </div>
+              <div className="card__img">
+                <div className="img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <section className="intro">
         <div className="intro__inner">
           <div className="intro__title">
