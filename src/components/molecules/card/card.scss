@@ -1,3 +1,5 @@
+@import '../../../pages/mixin.scss';
+
 .card {
   &__title {
     font-size: 24px;
@@ -28,9 +30,5 @@
   }
 }
 .active .card {
-  &--left,
-  &--right {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  @include showX;
 }
