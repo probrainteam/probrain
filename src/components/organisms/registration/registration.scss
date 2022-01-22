@@ -1,0 +1,12 @@
+@import '../../../pages/mixin.scss';
+
+.together {
+  &__inner {
+    @include inner;
+  }
+  text-align: center;
+  .together__title {
+    font-size: 40px;
+    margin: 50px 0;
+  }
+}
