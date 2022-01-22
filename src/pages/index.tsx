@@ -33,6 +33,7 @@ const IndexPage = () => {
           // imgSrc={probrainLogoBlue}
           className=""
         />
+
         <img src={probrainLogoBlue} alt="probrain" />
       </Introduce>
       <Introduce
@@ -40,36 +41,42 @@ const IndexPage = () => {
         subtitle="PROBRAIN 대표 활동들을 소개해요"
         className="activity"
       >
-        <Card
-          title="01 Membership Training (MT)"
-          detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
+        <ScrollComponent className="" scrollActiveLocation={150}>
+          <Card
+            title="01 Membership Training (MT)"
+            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
+        사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
+        이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
+        카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
+        이야기를 나눠보세요."
+            imgSrc={MT}
+            className="card--left"
+          />
+        </ScrollComponent>
+        <ScrollComponent className="" scrollActiveLocation={150}>
+          <Card
+            title="02 Homecoming day"
+            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
           사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-          imgSrc={MT}
-          className="card--left"
-        />
-        <Card
-          title="02 Homecoming day"
-          detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
+            imgSrc={HomecomingDay}
+            className="card--right"
+          />
+        </ScrollComponent>
+        <ScrollComponent className="" scrollActiveLocation={150}>
+          <Card
+            title="03 Web Education"
+            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
           사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-          imgSrc={HomecomingDay}
-          className="card--right"
-        />
-        <Card
-          title="03 Web Education"
-          detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-          사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-          이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-          카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-          이야기를 나눠보세요."
-          imgSrc={Education}
-          className="card--left"
-        />
+            imgSrc={Education}
+            className="card--left"
+          />
+        </ScrollComponent>
       </Introduce>
       <Introduce
         className="tmi"

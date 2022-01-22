@@ -14,8 +14,23 @@
     .card__text {
       width: 500px;
     }
+
+    // animation
+    transition: all 1.1s ease-out;
+    opacity: 0;
   }
   &--left {
     flex-direction: row-reverse;
+    transform: translateX(-50%);
+  }
+  &--right {
+    transform: translateX(50%);
+  }
+}
+.active .card {
+  &--left,
+  &--right {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

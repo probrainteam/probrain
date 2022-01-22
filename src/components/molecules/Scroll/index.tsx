@@ -26,8 +26,10 @@ const ScrollComponent: FunctionComponent<ScrollProps> = ({
     const { current } = scrollRef;
     if (current !== null) {
       const scroll: DOMRect = current.getBoundingClientRect();
+      console.log(scroll.top, window.innerHeight - scrollActiveLocation);
       if (scroll.top < window.innerHeight - scrollActiveLocation) {
         setIsShow(true);
+        console.log(isShow);
       } else {
         setIsShow(false);
       }

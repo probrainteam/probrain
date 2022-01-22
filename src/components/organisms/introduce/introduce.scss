@@ -20,17 +20,14 @@
     background-size: cover;
   }
   .card {
-    // @include grid-2;
     margin: 100px 0;
     img {
       min-width: 350px;
     }
   }
 }
-
 .tmi {
   .tmi__content {
-    // display: grid;
     @include grid-2;
   }
   .card {
