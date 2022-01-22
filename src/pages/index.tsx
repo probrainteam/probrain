@@ -2,45 +2,8 @@ import React, { useState, useEffect, FunctionComponent, useRef } from 'react';
 // import { StaticImage } from 'gatsby-plugin-image';
 import './index.scss';
 import Layout from 'components/layout';
-import debounce from 'lodash/debounce';
-type ScrollProps = {
-  classname: string;
-  scrollActiveLocation: number; //얼마나 보이고 이벤트 시작할지
-};
-const ScrollComponent: FunctionComponent<ScrollProps> = ({
-  children,
-  classname,
-  scrollActiveLocation,
-}) => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const delay = 15;
-  const [isShow, setIsShow] = useState(false);
+import ScrollComponent from 'components/molecules/Scroll';
 
-  useEffect(() => {
-    if (!scrollRef.current) return;
-    window.addEventListener('scroll', debounce(yScrollEvent, delay));
-    return () => {
-      window.removeEventListener('scroll', yScrollEvent);
-    };
-  }, [scrollRef.current]);
-
-  const yScrollEvent = () => {
-    const { current } = scrollRef;
-    if (current !== null) {
-      const scroll: DOMRect = current.getBoundingClientRect();
-      if (scroll.top < window.innerHeight - scrollActiveLocation) {
-        setIsShow(true);
-      } else {
-        setIsShow(false);
-      }
-    }
-  };
-  return (
-    <div className={`${classname} ${isShow ? 'active' : ''}`} ref={scrollRef}>
-      {children}
-    </div>
-  );
-};
 const IndexPage = () => {
   return (
     <Layout>
