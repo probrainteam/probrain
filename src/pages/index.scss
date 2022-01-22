@@ -10,32 +10,6 @@ $fontSize-small: 14px;
     font-weight: bold;
   }
 }
-.welcome {
-  &__inner {
-    @include inner;
-  }
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
-  }
-  &__title {
-    font-size: 48px;
-    &--light {
-      display: inline;
-      & + & {
-        padding-left: 10px;
-      }
-    }
-    &--bold {
-      font-weight: 700;
-    }
-  }
-  &__image {
-    object-fit: cover;
-  }
-}
 
 .about {
   &__inner {
@@ -52,7 +26,7 @@ $fontSize-small: 14px;
     @include inner;
   }
   @include section-title;
-  .card-list {
+  &__content {
     background-image: url('images/Vector.png');
     background-size: cover;
   }
