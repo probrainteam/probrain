@@ -12,9 +12,10 @@ const ScrollComponent: FunctionComponent<ScrollProps> = ({
   classname,
   scrollActiveLocation,
 }) => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const delay = 15;
   const [isShow, setIsShow] = useState(false);
+
   useEffect(() => {
     if (!scrollRef.current) return;
     window.addEventListener('scroll', debounce(yScrollEvent, delay));
@@ -22,12 +23,16 @@ const ScrollComponent: FunctionComponent<ScrollProps> = ({
       window.removeEventListener('scroll', yScrollEvent);
     };
   }, [scrollRef.current]);
+
   const yScrollEvent = () => {
-    const scroll: DOMRect = scrollRef.current.getBoundingClientRect();
-    if (scroll.top < window.innerHeight - scrollActiveLocation) {
-      setIsShow(true);
-    } else {
-      setIsShow(false);
+    const { current } = scrollRef;
+    if (current !== null) {
+      const scroll: DOMRect = current.getBoundingClientRect();
+      if (scroll.top < window.innerHeight - scrollActiveLocation) {
+        setIsShow(true);
+      } else {
+        setIsShow(false);
+      }
     }
   };
   return (
