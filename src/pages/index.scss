@@ -41,7 +41,35 @@ $fontSize-small: 14px;
     font-weight: bold;
   }
 }
-
+.welcome {
+  &__inner {
+    @include inner;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  &__title {
+    font-size: 48px;
+    &--light {
+      display: inline;
+      & + & {
+        padding-left: 10px;
+      }
+    }
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__image {
+    // test용
+    width: 100%;
+    height: 600px;
+    background-color: antiquewhite;
+  }
+}
 // @mixin card {
 //   box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
 //   border-radius: 20px;
