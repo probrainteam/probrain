@@ -201,6 +201,14 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="large-img"></section>
+      <section className="together">
+        <div className="together__inner">
+          <div className="together__title">
+            PRORAIN 과 함께 하고 싶으신가요?
+          </div>
+          <button className="btn btn--grey">PROBRAIN 가입 신청</button>
+        </div>
+      </section>
       {/* <section className="intro">
         <div className="intro__inner">
           <div className="intro__title">
