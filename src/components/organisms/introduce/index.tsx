@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import './introduce.scss';
 type introduceProps = {
   className: string;
   title: string;

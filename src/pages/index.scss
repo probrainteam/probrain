@@ -11,51 +11,6 @@ $fontSize-small: 14px;
   }
 }
 
-.about {
-  &__inner {
-    @include inner;
-  }
-  @include section-title;
-  .card {
-    @include grid-2;
-    @include card;
-  }
-}
-.activity {
-  &__inner {
-    @include inner;
-  }
-  @include section-title;
-  &__content {
-    background-image: url('images/Vector.png');
-    background-size: cover;
-  }
-  .card {
-    @include grid-2;
-    @include card;
-    margin: 100px 0;
-    img {
-      min-width: 350px;
-    }
-  }
-}
-.tmi {
-  &__inner {
-    @include inner;
-  }
-  @include section-title;
-  .tmi__content {
-    display: grid;
-    @include grid-2;
-  }
-  .card {
-    @include card;
-    &__detail--sub {
-      margin-left: 30px;
-      margin-top: 20px;
-    }
-  }
-}
 .large-img {
   background-image: url('images/exImg.png');
   background-size: cover;

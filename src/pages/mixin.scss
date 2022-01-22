@@ -31,17 +31,17 @@
     font-weight: 500;
   }
 }
-@mixin card {
-  &__title {
-    font-size: 24px;
-    color: #4caeea;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  &__detail {
-    // font-size: 14px;
-  }
-}
+// @mixin card {
+//   &__title {
+//     font-size: 24px;
+//     color: #4caeea;
+//     font-weight: 500;
+//     margin-bottom: 20px;
+//   }
+//   &__detail {
+//     // font-size: 14px;
+//   }
+// }
 @mixin grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
