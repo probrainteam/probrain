@@ -1,13 +1,8 @@
 $sub-color: #525252;
 $fontSize-small: 14px;
-// $media-pc-large: 1200px;
-// $media-pc: 1024px;
-// $media-tablet: 768px;
-// $media-mobile: 480px;
 
 @mixin inner {
   width: 100%;
-  // max-width: 1024px;
   max-width: 1200px;
   margin: 0 auto;
   @media screen and (max-width: 1200px) {
@@ -39,6 +34,7 @@ $fontSize-small: 14px;
     box-shadow: 4px 12px 20px 6px rgb(0 0 0 / 18%);
   }
 }
+
 .intro {
   &__inner {
     @include inner;
