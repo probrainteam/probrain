@@ -1,20 +1,21 @@
+import Button from 'components/atoms/button';
 import React, { FunctionComponent } from 'react';
 import './registration.scss';
 type introduceProps = {
   className: string;
   title: string;
-  btn: any;
+  btnText: string;
 };
 const Registration: FunctionComponent<introduceProps> = ({
   className,
-  btn,
+  btnText,
   title,
 }) => {
   return (
     <section className={`${className}`}>
       <div className={`${className}__inner`}>
         <div className={`${className}__title`}>{title}</div>
-        {btn}
+        <Button className="btn btn--grey"> {btnText}</Button>
       </div>
     </section>
   );

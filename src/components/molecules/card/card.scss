@@ -5,17 +5,17 @@
     font-weight: 500;
     margin-bottom: 20px;
   }
-  &__detail {
-    // font-size: 14px;
+  &--left,
+  &--right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    .card__text {
+      width: 500px;
+    }
   }
   &--left {
-    img {
-      float: left;
-    }
-  }
-  &--right {
-    img {
-      float: right;
-    }
+    flex-direction: row-reverse;
   }
 }

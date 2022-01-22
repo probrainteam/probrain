@@ -8,17 +8,19 @@
   }
 }
 
-.about .card {
-  @include grid-2;
+.about {
+  &__content {
+    @include grid-2;
+    justify-items: right;
+  }
 }
-
 .activity {
   &__content {
     background-image: url('images/Vector.png');
     background-size: cover;
   }
   .card {
-    @include grid-2;
+    // @include grid-2;
     margin: 100px 0;
     img {
       min-width: 350px;
@@ -28,7 +30,7 @@
 
 .tmi {
   .tmi__content {
-    display: grid;
+    // display: grid;
     @include grid-2;
   }
   .card {
