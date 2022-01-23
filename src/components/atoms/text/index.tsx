@@ -1,4 +1,6 @@
+import React from 'react';
 import { ReactNode } from 'react';
+import './text.scss';
 
 interface TextProps {
   children: ReactNode;

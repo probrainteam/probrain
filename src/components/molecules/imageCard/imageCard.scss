@@ -1,0 +1,11 @@
+.image-card {
+  display: flex;
+
+  &--left {
+    flex-direction: row-reverse;
+  }
+
+  &--right {
+    flex-direction: row;
+  }
+}

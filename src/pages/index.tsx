@@ -1,23 +1,23 @@
-import React, { useState, useEffect, FunctionComponent, useRef } from 'react';
-// import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
+
 import './index.scss';
 import Layout from 'components/layout';
 import probrainLogoBlue from 'images/probrainLogo-blue.png';
 import Education from 'images/Education.png';
 import HomecomingDay from 'images/HomecomingDay.png';
 import MT from 'images/MT.png';
-import exImg from 'images/exImg.png';
 
-import ScrollComponent from 'components/molecules/Scroll';
+import ScrollComponent from 'components/atoms/Scroll';
 import Introduce from 'components/organisms/introduce';
 import Welcome from 'components/organisms/welcome';
-import Card, { CardLeft, CardRight } from 'components/molecules/listCard';
+
 import Registration from 'components/organisms/registration';
-import Button from 'components/atoms/button';
+
 import ListCard from 'components/molecules/listCard';
-import ImgCard from 'components/molecules/imgCard';
-import TextContent from 'components/atoms/textContent';
+import ImageCard from 'components/molecules/imageCard';
+import TextContent from 'components/molecules/textContent';
 import ImageContent from 'components/atoms/image';
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -35,7 +35,7 @@ const IndexPage = () => {
               카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
               이야기를 나눠보세요."
         />
-        <ImageContent imgSrc={probrainLogoBlue} className="" />
+        <ImageContent src={probrainLogoBlue} className="" />
       </Introduce>
       <Introduce
         title="ACTIVITY"
@@ -43,39 +43,39 @@ const IndexPage = () => {
         className="activity"
       >
         <ScrollComponent className="" scrollActiveLocation={150}>
-          <ImgCard
+          <ImageCard
             title="01 Membership Training (MT)"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
         사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
         이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
         카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
         이야기를 나눠보세요."
-            imgSrc={MT}
-            className="card--left"
+            src={MT}
+            className="left"
           />
         </ScrollComponent>
         <ScrollComponent className="" scrollActiveLocation={150}>
-          <ImgCard
+          <ImageCard
             title="02 Homecoming day"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
           사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-            imgSrc={HomecomingDay}
-            className="card--right"
+            src={HomecomingDay}
+            className="right"
           />
         </ScrollComponent>
         <ScrollComponent className="" scrollActiveLocation={150}>
-          <ImgCard
+          <ImageCard
             title="03 Web Education"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
           사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-            imgSrc={Education}
-            className="card--left"
+            src={Education}
+            className="left"
           />
         </ScrollComponent>
       </Introduce>

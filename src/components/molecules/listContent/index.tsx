@@ -1,3 +1,4 @@
+import Text from 'components/atoms/text';
 import React from 'react';
 
 interface ListContentProps {
@@ -10,7 +11,9 @@ const ListContent = ({ list, className }: ListContentProps) => {
     <div className={className}>
       <ul>
         {list.map(item => (
-          <li>{item}</li>
+          <li>
+            <Text className="list">{item}</Text>
+          </li>
         ))}
       </ul>
     </div>

@@ -2,13 +2,13 @@ import React from 'react';
 
 interface ImageProps {
   className?: string;
-  imgSrc: any;
+  src: string;
 }
 
-const Image = ({ className, imgSrc }: ImageProps) => {
+const Image = ({ className, src }: ImageProps) => {
   return (
     <div className={className}>
-      <img src={imgSrc} alt={className} />
+      <img src={src} alt={className} />
     </div>
   );
 };
