@@ -1,13 +1,14 @@
 import React from 'react';
-// const ScrollComponent = ({ children, className, scrollActiveLocation } : ScrollProps) =>
+
 interface ImageProps {
-  className: string;
+  className?: string;
   imgSrc: any;
 }
+
 const ImageContent = ({ className, imgSrc }: ImageProps) => {
   return (
     <div className={className}>
-      <img src={imgSrc} alt="probrain" />
+      <img src={imgSrc} alt={className} />
     </div>
   );
 };

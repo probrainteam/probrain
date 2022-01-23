@@ -1,13 +1,18 @@
 import React from 'react';
-interface textProps {
+
+interface ListContentProps {
   className: string;
   list: string[];
 }
-const ListContent = ({ list, className }: textProps) => {
-  const liElements = list.map(item => <li>{item}</li>);
+
+const ListContent = ({ list, className }: ListContentProps) => {
   return (
     <div className={className}>
-      <ul>{liElements}</ul>
+      <ul>
+        {list.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 };
