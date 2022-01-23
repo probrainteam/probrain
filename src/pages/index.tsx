@@ -17,7 +17,7 @@ import Button from 'components/atoms/button';
 import ListCard from 'components/molecules/listCard';
 import ImgCard from 'components/molecules/imgCard';
 import TextContent from 'components/atoms/textContent';
-import ImageContent from 'components/atoms/imageContent';
+import ImageContent from 'components/atoms/image';
 const IndexPage = () => {
   return (
     <Layout>

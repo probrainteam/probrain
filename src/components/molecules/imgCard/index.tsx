@@ -1,4 +1,4 @@
-import ImageContent from 'components/atoms/imageContent';
+import ImageContent from 'components/atoms/image';
 import TextContent from 'components/atoms/textContent';
 import React from 'react';
 import './imgCard.scss';
