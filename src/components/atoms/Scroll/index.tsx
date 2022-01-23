@@ -6,6 +6,7 @@ interface ScrollProps {
   className: string;
   scrollActiveLocation: number; //얼마나 보이고 이벤트 시작할지
 }
+
 const ScrollComponent = ({
   children,
   className,

@@ -1,14 +1,17 @@
 @import '../../../pages/mixin.scss';
-.about,
-.activity,
-.tmi {
-  @include section-title;
+
+.section {
+  margin: 120px 0;
   &__inner {
     @include inner;
   }
+
+  &__title {
+    margin-bottom: 60px;
+  }
 }
 
-.about {
+.grid-2 {
   &__content {
     @include grid-2;
     justify-items: right;
@@ -23,17 +26,6 @@
     margin: 100px 0;
     img {
       min-width: 350px;
-    }
-  }
-}
-.tmi {
-  .tmi__content {
-    @include grid-2;
-  }
-  .card {
-    &__detail--sub {
-      margin-left: 30px;
-      margin-top: 20px;
     }
   }
 }

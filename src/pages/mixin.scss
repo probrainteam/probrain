@@ -22,21 +22,12 @@
   flex-direction: column;
   justify-content: center;
 }
-@mixin section-title {
-  &__title {
-    margin: 60px 0;
-  }
-  &__title--main {
-    font-size: 36px;
-    font-weight: 500;
-  }
-}
 
 @mixin grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
-  align-items: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 80px;
 }
 @mixin showX {
   &--left,

@@ -1,12 +1,9 @@
 @import '../../../pages/mixin.scss';
 
-.together {
+.probrain-outro {
   &__inner {
     @include inner;
+    @include flex-inner-column;
   }
-  text-align: center;
-  .together__title {
-    font-size: 40px;
-    margin: 50px 0;
-  }
+  margin: 100px 0;
 }

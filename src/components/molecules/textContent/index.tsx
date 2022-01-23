@@ -5,11 +5,12 @@ import Text from 'components/atoms/text';
 interface TextContentProps {
   title: string;
   detail: string;
+  className: string;
 }
 
-const TextContent = ({ title, detail }: TextContentProps) => {
+const TextContent = ({ className, title, detail }: TextContentProps) => {
   return (
-    <div>
+    <div className={className}>
       <Text className="content-title">{title}</Text>
       <Text className="content-detail">{detail}</Text>
     </div>

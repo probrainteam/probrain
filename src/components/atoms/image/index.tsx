@@ -1,4 +1,5 @@
 import React from 'react';
+import './image.scss';
 
 interface ImageProps {
   className?: string;

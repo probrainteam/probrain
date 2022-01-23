@@ -1,11 +1,12 @@
-import * as React from 'react';
-import SocialIcons from 'components/molecules/socialIcons';
+import React from 'react';
 import './footer.scss';
+import SocialIcons from 'components/molecules/socialIcons';
+import Text from 'components/atoms/text';
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer__inner">
-      &copy; {new Date().getFullYear()} PROBRAIN
+      <Text className="footer">&copy; {new Date().getFullYear()} PROBRAIN</Text>
       <SocialIcons />
     </div>
   </footer>

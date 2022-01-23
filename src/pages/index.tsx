@@ -8,13 +8,13 @@ import HomecomingDay from 'images/HomecomingDay.png';
 import MT from 'images/MT.png';
 
 import ScrollComponent from 'components/atoms/Scroll';
-import Introduce from 'components/organisms/introduce';
+import Section from 'components/organisms/section';
 import Welcome from 'components/organisms/welcome';
 
 import Registration from 'components/organisms/registration';
 
-import ListCard from 'components/molecules/listCard';
-import ImageCard from 'components/molecules/imageCard';
+import ListCard from 'components/organisms/listCard';
+import ImageCard from 'components/organisms/imageCard';
 import TextContent from 'components/molecules/textContent';
 import ImageContent from 'components/atoms/image';
 
@@ -22,8 +22,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Welcome />
-      <Introduce
-        className="about"
+
+      <Section
+        className="grid-2"
         title="ABOUT"
         subtitle="PROBRAIN은 어떤 동아리일까요?"
       >
@@ -36,8 +37,9 @@ const IndexPage = () => {
               이야기를 나눠보세요."
         />
         <ImageContent src={probrainLogoBlue} className="" />
-      </Introduce>
-      <Introduce
+      </Section>
+
+      <Section
         title="ACTIVITY"
         subtitle="PROBRAIN 대표 활동들을 소개해요"
         className="activity"
@@ -78,9 +80,10 @@ const IndexPage = () => {
             className="left"
           />
         </ScrollComponent>
-      </Introduce>
-      <Introduce
-        className="tmi"
+      </Section>
+
+      <Section
+        className="grid-2"
         title="PROBRAIN TMI"
         subtitle="PROBRAIN 의 사소한 정보들!"
       >
@@ -131,12 +134,14 @@ const IndexPage = () => {
             '온라인 / 오프라인 다양한 형태 선정',
           ]}
         ></ListCard>
-      </Introduce>
+      </Section>
+
       <section className="large-img"></section>
+
       <Registration
         title="  PRORAIN 과 함께 하고 싶으신가요?"
         btnText="PROBRAIN에 가입신청하기"
-        className="together"
+        className="probrain-outro"
       />
     </Layout>
   );

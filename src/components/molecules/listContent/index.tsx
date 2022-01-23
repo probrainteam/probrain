@@ -1,5 +1,6 @@
 import Text from 'components/atoms/text';
 import React from 'react';
+import './listContent.scss';
 
 interface ListContentProps {
   className: string;
