@@ -37,10 +37,7 @@ const Nav = () => {
           <Text className="nav">PROBRAIN</Text>
         </Link>
         <Link to="/junior" className="nav__item">
-          <Text className="nav">PROB junior</Text>
-        </Link>
-        <Link to="/contact" className="nav__item">
-          <Text className="nav">CONTACT</Text>
+          <Text className="nav">JUNIOR</Text>
         </Link>
         <button className="nav__icon-wrapper" onClick={darkModeHandling}>
           <MoonIcon />
