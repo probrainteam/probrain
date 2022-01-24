@@ -1,12 +1,7 @@
 import React from 'react';
-
 import './index.scss';
+import { graphql, useStaticQuery } from 'gatsby';
 import Layout from 'components/layout';
-import probrainLogoBlue from 'images/probrainLogo-blue.png';
-import Education from 'images/Education.png';
-import HomecomingDay from 'images/HomecomingDay.png';
-import MT from 'images/MT.png';
-
 import ScrollComponent from 'components/atoms/Scroll';
 import Section from 'components/organisms/section';
 import Welcome from 'components/organisms/welcome';
@@ -16,7 +11,40 @@ import ImageCard from 'components/organisms/imageCard';
 import TextContent from 'components/molecules/textContent';
 import ImageContent from 'components/atoms/image';
 
+interface StaticImageType {
+  blueLogo: {
+    publicURL: string;
+  };
+  mt: {
+    publicURL: string;
+  };
+  homecoming: {
+    publicURL: string;
+  };
+  education: {
+    publicURL: string;
+  };
+}
+
 const IndexPage = () => {
+  const { blueLogo, mt, homecoming, education } =
+    useStaticQuery<StaticImageType>(graphql`
+      query {
+        blueLogo: file(name: { eq: "logo-blue" }) {
+          publicURL
+        }
+        mt: file(name: { eq: "mt" }) {
+          publicURL
+        }
+        homecoming: file(name: { eq: "homecoming" }) {
+          publicURL
+        }
+        education: file(name: { eq: "education" }) {
+          publicURL
+        }
+      }
+    `);
+
   return (
     <Layout>
       <Welcome />
@@ -35,7 +63,7 @@ const IndexPage = () => {
               카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
               이야기를 나눠보세요."
         />
-        <ImageContent src={probrainLogoBlue} className="" />
+        <ImageContent src={blueLogo.publicURL} className="" />
       </Section>
 
       <Section
@@ -51,7 +79,7 @@ const IndexPage = () => {
         이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
         카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
         이야기를 나눠보세요."
-            src={MT}
+            src={mt.publicURL}
             className="left"
           />
         </ScrollComponent>
@@ -63,7 +91,7 @@ const IndexPage = () => {
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-            src={HomecomingDay}
+            src={homecoming.publicURL}
             className="right"
           />
         </ScrollComponent>
@@ -75,7 +103,7 @@ const IndexPage = () => {
           이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
           카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
           이야기를 나눠보세요."
-            src={Education}
+            src={education.publicURL}
             className="left"
           />
         </ScrollComponent>
@@ -135,7 +163,7 @@ const IndexPage = () => {
         />
       </Section>
 
-      <section className="large-img"></section>
+      <section className="large-img" />
 
       <Registration
         title="  PRORAIN 과 함께 하고 싶으신가요?"
