@@ -24,7 +24,7 @@ const Outro = () => {
     <section className="outro">
       <div className="outro__inner">
         <div className="row-flex">
-          <Image className="" src={outro.publicURL} />
+          <Image className="outro" src={outro.publicURL} />
 
           <div className="column-flex">
             <Text className="junior-outro--title">

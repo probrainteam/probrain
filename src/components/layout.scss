@@ -17,11 +17,29 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  &.dark {
+    --mainBackground: #000000;
+    --cardBg : #1a1a1a;
+    --mainColor: #ffffff;
+    --imageFilter: invert();
+    --buttonBg : #1a1a1a;
+    --buttonColor: #ffffff;
+  }
+
+  &.light {
+    --mainBackground: #ffffff;
+    --cardBg : #ffffff
+    --mainColor: #000000;
+    --imageFilter: opacity(1);
+    --buttonBg : #eeeeee;
+    --buttonColor: #000000;
+  }
 }
 
 a,
 a:hover {
-  color: black;
+  color: var(--mainColor);
   text-decoration: none;
   cursor: pointer;
 }
@@ -31,6 +49,8 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  background-color: var(--mainBackground);
+  color: var(--mainColor);
 }
 
 main {
