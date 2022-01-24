@@ -1,6 +1,7 @@
 @import '../../../pages/mixin.scss';
 
 .welcome {
+  margin-top: 100px;
   &__inner {
     @include inner;
   }

@@ -37,4 +37,40 @@
     font-weight: 700;
     margin: 50px 0;
   }
+
+  &--junior-intro {
+    width: fit-content;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  &--junior-intro--light {
+    width: fit-content;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  &--junior-property--bold {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &--junior-property--light {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &--junior-outro--title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &--junior-outro--detail {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
 }

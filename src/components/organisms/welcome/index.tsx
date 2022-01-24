@@ -16,7 +16,7 @@ const Welcome = () => {
           </div>
           <Button className="gray">PROBRAIN 가입 신청</Button>
         </div>
-        <Image className="welcome" src={mainImage} />
+        <Image className="welcome-image" src={mainImage} />
       </div>
     </section>
   );

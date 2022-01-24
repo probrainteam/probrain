@@ -10,9 +10,7 @@ import MT from 'images/MT.png';
 import ScrollComponent from 'components/atoms/Scroll';
 import Section from 'components/organisms/section';
 import Welcome from 'components/organisms/welcome';
-
 import Registration from 'components/organisms/registration';
-
 import ListCard from 'components/organisms/listCard';
 import ImageCard from 'components/organisms/imageCard';
 import TextContent from 'components/molecules/textContent';
@@ -29,6 +27,7 @@ const IndexPage = () => {
         subtitle="PROBRAIN은 어떤 동아리일까요?"
       >
         <TextContent
+          className=""
           title="웹 개발 동아리"
           detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
               사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
@@ -99,7 +98,7 @@ const IndexPage = () => {
             '온라인 / 오프라인 다양한 형태 선정',
             '온라인 / 오프라인 다양한 형태 선정',
           ]}
-        ></ListCard>
+        />
         <ListCard
           title="02 의욕적인 동아리"
           detail="  내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의 공통된
@@ -111,7 +110,7 @@ const IndexPage = () => {
             '온라인 / 오프라인 다양한 형태 선정',
             '온라인 / 오프라인 다양한 형태 선정',
           ]}
-        ></ListCard>
+        />
         <ListCard
           title="03 개발과 친목이 공존하는 동아리"
           detail="혼자 공부하다보면 지치고 힘들 때가 많은 것 같아요. 팀원들과 같이
@@ -122,7 +121,7 @@ const IndexPage = () => {
             '온라인 / 오프라인 다양한 형태 선정',
             '온라인 / 오프라인 다양한 형태 선정',
           ]}
-        ></ListCard>
+        />
         <ListCard
           title="04 선배들의 OUTPUT이 좋은 동아리"
           detail="포지션과 수준에 맞춰 팀이 꾸려져요. 팀 단위로 프로젝트를 진행하고
@@ -133,7 +132,7 @@ const IndexPage = () => {
             '온라인 / 오프라인 다양한 형태 선정',
             '온라인 / 오프라인 다양한 형태 선정',
           ]}
-        ></ListCard>
+        />
       </Section>
 
       <section className="large-img"></section>

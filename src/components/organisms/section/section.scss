@@ -1,7 +1,7 @@
 @import '../../../pages/mixin.scss';
 
 .section {
-  margin: 120px 0;
+  margin: 200px 0;
   &__inner {
     @include inner;
   }
@@ -17,15 +17,19 @@
     justify-items: right;
   }
 }
+
+.grid-4 {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-column-gap: 120px;
+  }
+}
+
 .activity {
   &__content {
     background-image: url('images/Vector.png');
     background-size: cover;
-  }
-  .card {
-    margin: 100px 0;
-    img {
-      min-width: 350px;
-    }
   }
 }
