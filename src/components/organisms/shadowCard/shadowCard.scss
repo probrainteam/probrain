@@ -1,0 +1,19 @@
+.shadow-card {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 40px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 40px;
+
+  &--left {
+    flex-direction: row-reverse;
+  }
+
+  &--right {
+    flex-direction: row;
+  }
+}

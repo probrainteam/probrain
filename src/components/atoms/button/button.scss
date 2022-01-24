@@ -1,8 +1,10 @@
-.btn {
-  &--grey {
-    padding: 15px 40px;
-    border-radius: 50px;
+.button {
+  &--gray {
+    padding: 15px 45px;
+    font-size: 18px;
+    background: #eeeeee;
     border: none;
-    font-weight: bold;
+    border-radius: 40px;
+    font-weight: 500;
   }
 }

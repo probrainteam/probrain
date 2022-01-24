@@ -1,5 +1,7 @@
 @import '../../../pages/mixin.scss';
+
 .welcome {
+  margin-top: 100px;
   &__inner {
     @include inner;
   }
@@ -7,21 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
-  }
-  &__title {
-    font-size: 48px;
-    &--light {
-      display: inline;
-      & + & {
-        padding-left: 10px;
-      }
-    }
-    &--bold {
-      font-weight: 700;
-    }
-  }
-  &__image img {
-    width: 100%;
+    padding: 0px 40px 80px 0;
   }
 }

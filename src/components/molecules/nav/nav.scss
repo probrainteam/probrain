@@ -1,17 +1,10 @@
 .nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 15px;
-
   @media (max-width: 768px) {
     display: none;
   }
 
   &__inner {
     display: flex;
-    // margin-right: 30px;
   }
 
   &__item {
