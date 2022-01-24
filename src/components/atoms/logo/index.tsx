@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import './logo.scss';
+import Image from '../image';
 
 interface LogoDataType {
   logo: {
@@ -19,7 +19,7 @@ const Logo = () => {
 
   return (
     <Link to="/">
-      <img src={logo.publicURL} className="logo" alt="logo" />
+      <Image src={logo.publicURL} className="logo" />
     </Link>
   );
 };

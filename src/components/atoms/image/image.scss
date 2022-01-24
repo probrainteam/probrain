@@ -11,4 +11,21 @@
   width: 150px;
   height: 150px;
   margin: 20px;
+
+  filter: var(--imageFilter);
+}
+
+.logo img {
+  width: 108px;
+  display: block;
+  margin: 0px auto;
+  filter: var(--imageFilter);
+
+  @media (max-width: 768px) {
+    width: 80px;
+  }
+}
+
+.outro img {
+  filter: var(--imageFilter);
 }
