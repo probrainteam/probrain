@@ -1,16 +1,30 @@
 import React from 'react';
 import './outro.scss';
-import outro from 'images/outro-image.png';
 import Button from 'components/atoms/button';
 import Image from 'components/atoms/image';
 import Text from 'components/atoms/text';
+import { graphql, useStaticQuery } from 'gatsby';
+
+interface StaticImageType {
+  outro: {
+    publicURL: string;
+  };
+}
 
 const Outro = () => {
+  const { outro } = useStaticQuery<StaticImageType>(graphql`
+    query {
+      outro: file(name: { eq: "outro" }) {
+        publicURL
+      }
+    }
+  `);
+
   return (
     <section className="outro">
       <div className="outro__inner">
         <div className="row-flex">
-          <Image className="" src={outro} />
+          <Image className="" src={outro.publicURL} />
 
           <div className="column-flex">
             <Text className="junior-outro--title">
