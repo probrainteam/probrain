@@ -1,19 +1,20 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import './nav.scss';
+import { Link } from 'gatsby';
+import Text from 'components/atoms/text';
 
 const Nav = () => {
   return (
     <nav className="nav">
       <div className="nav__inner">
         <Link to="/" className="nav__item">
-          PROBRAIN
+          <Text className="nav">PROBRAIN</Text>
         </Link>
         <Link to="/junior" className="nav__item">
-          PROB junior
+          <Text className="nav">PROB junior</Text>
         </Link>
         <Link to="/contact" className="nav__item">
-          CONTACT
+          <Text className="nav">CONTACT</Text>
         </Link>
       </div>
     </nav>

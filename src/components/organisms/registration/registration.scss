@@ -1,0 +1,22 @@
+@import '../../../pages/mixin.scss';
+
+.probrain-outro {
+  &__inner {
+    @include inner;
+    @include flex-inner-column;
+  }
+  margin: 100px 0;
+}
+
+.junior-intro {
+  &__title {
+    @include flex-inner-column;
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    @include inner;
+    @include flex-inner-column;
+    height: calc(100vh - 80px);
+  }
+}

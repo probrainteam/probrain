@@ -1,18 +1,16 @@
-import * as React from 'react';
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import './socialIcons.scss';
+import { EmailIcon, GithubIcon, InstagramIcon } from 'components/atoms/icon';
 
 const SocialIcons = () => (
   <div className="social-icons">
     <a href="https://github.com/probrainteam" target="_blank">
-      <FontAwesomeIcon icon={faGithub} size="lg" color="#000000" />
+      <GithubIcon />
     </a>
     <a href="https://www.instagram.com/jeonbyeongm1n/?hl=ko" target="_blank">
-      <FontAwesomeIcon icon={faInstagram} size="lg" color="#000000" />
+      <InstagramIcon />
     </a>
-    <FontAwesomeIcon icon={faEnvelopeSquare} size="lg" color="#000000" />
+    <EmailIcon />
   </div>
 );
 

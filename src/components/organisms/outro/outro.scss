@@ -1,0 +1,25 @@
+@import '../../../pages/mixin.scss';
+
+.outro {
+  &__inner {
+    @include inner;
+  }
+  margin-bottom: 100px;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outro__description-list {
+  margin: 30px 0;
+}
