@@ -1,11 +1,25 @@
 import React from 'react';
 import './welcome.scss';
-import mainImage from 'images/mainImage.png';
 import Button from 'components/atoms/button';
 import Text from 'components/atoms/text';
 import Image from 'components/atoms/image';
+import { graphql, useStaticQuery } from 'gatsby';
+
+interface StaticImageType {
+  main: {
+    publicURL: string;
+  };
+}
 
 const Welcome = () => {
+  const { main } = useStaticQuery<StaticImageType>(graphql`
+    query {
+      main: file(name: { eq: "main" }) {
+        publicURL
+      }
+    }
+  `);
+
   return (
     <section className="welcome">
       <div className="welcome__inner">
@@ -16,7 +30,7 @@ const Welcome = () => {
           </div>
           <Button className="gray">PROBRAIN 가입 신청</Button>
         </div>
-        <Image className="welcome-image" src={mainImage} />
+        <Image className="welcome-image" src={main.publicURL} />
       </div>
     </section>
   );
