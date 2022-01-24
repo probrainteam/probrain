@@ -166,7 +166,7 @@ const IndexPage = () => {
       <section className="large-img" />
 
       <Registration
-        title="  PRORAIN 과 함께 하고 싶으신가요?"
+        title="  PROBRAIN 과 함께 하고 싶으신가요?"
         btnText="PROBRAIN에 가입신청하기"
         className="probrain-outro"
       />
