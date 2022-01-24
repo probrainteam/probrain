@@ -13,5 +13,9 @@
 
   &__icon-wrapper {
     margin-left: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--mainColor);
   }
 }

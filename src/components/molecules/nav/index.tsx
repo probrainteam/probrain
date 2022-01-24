@@ -42,9 +42,9 @@ const Nav = () => {
         <Link to="/contact" className="nav__item">
           <Text className="nav">CONTACT</Text>
         </Link>
-        <div className="nav__icon-wrapper" onClick={darkModeHandling}>
+        <button className="nav__icon-wrapper" onClick={darkModeHandling}>
           <MoonIcon />
-        </div>
+        </button>
       </div>
     </nav>
   );

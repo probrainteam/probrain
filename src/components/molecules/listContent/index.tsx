@@ -11,8 +11,8 @@ const ListContent = ({ list, className }: ListContentProps) => {
   return (
     <div className={className}>
       <ul>
-        {list.map(item => (
-          <li>
+        {list.map((item, index) => (
+          <li key={index}>
             <Text className="list">{item}</Text>
           </li>
         ))}
