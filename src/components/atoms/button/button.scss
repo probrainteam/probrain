@@ -8,5 +8,9 @@
     border-radius: 40px;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.15s ease-out;
+  }
+  &:hover {
+    background: var(--buttonHoverBg);
   }
 }

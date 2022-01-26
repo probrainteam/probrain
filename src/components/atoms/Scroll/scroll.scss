@@ -1,0 +1,46 @@
+.scroll-up,
+.scroll-down {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+.scroll-left,
+.scroll-right {
+  opacity: 0;
+
+  transition: all 1s ease-out;
+}
+
+.scroll-up {
+  transform: translateY(35%);
+}
+.scroll-up-1 {
+  transform: translateY(10%);
+}
+.scroll-up-2 {
+  transform: translateY(30%);
+}
+.scroll-up-3 {
+  transform: translateY(45%);
+}
+.scroll-up-4 {
+  transform: translateY(60%);
+}
+.scroll-down {
+  transform: translateY(-50%);
+}
+.scroll-right {
+  transform: translateX(50%);
+}
+.scroll-left {
+  transform: translateX(-50%);
+}
+.scroll-right.active,
+.scroll-left.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.scroll-up.active,
+.scroll-down.active {
+  transform: translateY(0);
+  opacity: 1;
+}
