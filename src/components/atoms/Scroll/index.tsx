@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, ReactNode } from 'react';
 import { debounce } from 'lodash';
-
+import './scroll.scss';
 interface ScrollProps {
   children: ReactNode;
   className: string;
@@ -28,6 +28,11 @@ const ScrollComponent = ({
     const { current } = scrollRef;
     if (current !== null) {
       const scroll: DOMRect = current.getBoundingClientRect();
+      console.log(
+        className,
+        scroll.top,
+        window.innerHeight - scrollActiveLocation,
+      );
       if (scroll.top < window.innerHeight - scrollActiveLocation) {
         setIsShow(true);
       } else {
