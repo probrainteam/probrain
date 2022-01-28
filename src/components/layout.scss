@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   &.dark {
     --mainBackground: #000000;
@@ -25,6 +26,7 @@ body {
     --imageFilter: invert();
     --buttonBg : #1a1a1a;
     --buttonColor: #ffffff;
+    --buttonHoverBg: #262626;
   }
 
   &.light {
@@ -34,6 +36,8 @@ body {
     --imageFilter: opacity(1);
     --buttonBg : #eeeeee;
     --buttonColor: #000000;
+    --buttonHoverBg: #e5e5e5;
+
   }
 }
 
