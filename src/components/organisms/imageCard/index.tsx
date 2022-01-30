@@ -14,7 +14,7 @@ const ImageCard = ({ title, detail, className, src }: ImageCardProps) => {
   return (
     <div className={`image-card image-card--${className}`}>
       <TextContent className="activity" title={title} detail={detail} />
-      <Image className="image-card" src={src} />
+      <Image className="activity" src={src} />
     </div>
   );
 };

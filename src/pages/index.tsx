@@ -9,7 +9,7 @@ import Registration from 'components/organisms/registration';
 import ListCard from 'components/organisms/listCard';
 import ImageCard from 'components/organisms/imageCard';
 import TextContent from 'components/molecules/textContent';
-import ImageContent from 'components/atoms/image';
+import Image from 'components/atoms/image';
 
 interface StaticImageType {
   blueLogo: {
@@ -59,7 +59,11 @@ const IndexPage = () => {
         title="ABOUT"
         subtitle="PROBRAIN은 어떤 동아리일까요?"
       >
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
+          <Image src={blueLogo.publicURL} className="blueLogo" />
+        </ScrollComponent>
+
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <TextContent
             className=""
             title="웹 개발 동아리"
@@ -70,17 +74,14 @@ const IndexPage = () => {
               이야기를 나눠보세요."
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
-          <ImageContent src={blueLogo.publicURL} className="" />
-        </ScrollComponent>
       </Section>
 
       <Section
+        className="activity"
         title="ACTIVITY"
         subtitle="PROBRAIN 대표 활동들을 소개해요"
-        className="activity"
       >
-        <ScrollComponent className="scroll-left" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-left" scrollActiveLocation={0}>
           <ImageCard
             title="01 Membership Training (MT)"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -92,7 +93,7 @@ const IndexPage = () => {
             className="left"
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-right" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-right" scrollActiveLocation={0}>
           <ImageCard
             title="02 Homecoming day"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -104,7 +105,7 @@ const IndexPage = () => {
             className="right"
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-left" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-left" scrollActiveLocation={0}>
           <ImageCard
             title="03 Web Education"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -116,7 +117,7 @@ const IndexPage = () => {
             className="left"
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-right" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-right" scrollActiveLocation={0}>
           <ImageCard
             title="04 Web Contest"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -135,7 +136,7 @@ const IndexPage = () => {
         title="PROBRAIN TMI"
         subtitle="PROBRAIN 의 사소한 정보들!"
       >
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title=" 01 전통이 있는 동아리 (since 2002)"
             detail="  개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -150,7 +151,7 @@ const IndexPage = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="02 의욕적인 동아리"
             detail="  내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의 공통된
@@ -164,7 +165,7 @@ const IndexPage = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="03 개발과 친목이 공존하는 동아리"
             detail="혼자 공부하다보면 지치고 힘들 때가 많은 것 같아요. 팀원들과 같이
@@ -177,7 +178,7 @@ const IndexPage = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="04 선배들의 OUTPUT이 좋은 동아리"
             detail="포지션과 수준에 맞춰 팀이 꾸려져요. 팀 단위로 프로젝트를 진행하고

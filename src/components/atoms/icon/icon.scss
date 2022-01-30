@@ -1,6 +1,7 @@
-.github,
-.insta,
-.email,
-.moon {
-  filter: var(--imageFilter);
+.bars {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }

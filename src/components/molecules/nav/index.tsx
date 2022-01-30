@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './nav.scss';
 import { Link } from 'gatsby';
+import './nav.scss';
 import Text from 'components/atoms/text';
-import { MoonIcon } from 'components/atoms/icon';
+import { BarsIcon, MoonIcon } from 'components/atoms/icon';
 
 declare global {
   interface Window {
@@ -43,6 +43,7 @@ const Nav = () => {
           <MoonIcon />
         </button>
       </div>
+      <BarsIcon />
     </nav>
   );
 };

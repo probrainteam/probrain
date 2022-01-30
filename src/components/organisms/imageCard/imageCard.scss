@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 50px;
 
   &--left {
@@ -12,5 +12,14 @@
 
   &--right {
     flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+    padding: 3rem;
+    border-radius: 2.4rem;
+    background-color: var(--cardBg);
+    margin-bottom: 30px;
   }
 }

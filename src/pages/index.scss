@@ -1,11 +1,16 @@
 @import './mixin.scss';
 $sub-color: #525252;
-$fontSize-small: 14px;
+$fontSize-small: 1.4rem;
 
 .large-img {
   background-image: url('images/exImg.png');
   background-size: cover;
-  margin-top: 200px;
-  height: 400px;
+  margin-top: 20rem;
+  height: 40rem;
   filter: var(--imageFilter);
+
+  @media (max-width: 768px) {
+    margin-top: 10rem;
+    height: 20rem;
+  }
 }

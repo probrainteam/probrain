@@ -1,14 +1,34 @@
 @import '../../../pages/mixin.scss';
 
 .welcome {
-  margin-top: 100px;
+  margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    margin-top: 5rem;
+  }
+
   &__inner {
     @include inner;
   }
+
+  &__title {
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
   &__top {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px 80px 0;
+    padding: 0px 4rem 8rem 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem 0;
+      margin-bottom: 5rem;
+    }
   }
 }
