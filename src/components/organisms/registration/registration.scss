@@ -5,14 +5,23 @@
     @include inner;
     @include flex-inner-column;
   }
-  margin: 100px 0;
+
+  margin: 10rem 0;
+
+  @media (max-width: 768px) {
+    margin: 5rem 0;
+  }
 }
 
 .junior-intro {
   animation: intro 0.7s ease-out forwards;
   &__title {
     @include flex-inner-column;
-    margin-bottom: 70px;
+    margin-bottom: 7rem;
+
+    @media (max-width: 768px) {
+      margin: 2rem 0;
+    }
   }
 
   &__inner {
@@ -21,6 +30,7 @@
     height: calc(100vh - 80px);
   }
 }
+
 @keyframes intro {
   0% {
     opacity: 0;

@@ -27,24 +27,27 @@ const Outro = () => {
           <Image className="outro" src={outro.publicURL} />
 
           <div className="column-flex">
-            <Text className="junior-outro--title">
-              PROB junior 는 이런 사람들을 기다립니다.
-            </Text>
+            <div>
+              <Text className="junior-outro--title">
+                PROB junior 는 이런 사람들을 기다립니다.
+              </Text>
 
-            <div className="outro__description-list">
-              <Text className="junior-outro--detail">
-                01 web/app 개발에 관심이 있는 학생
-              </Text>
-              <Text className="junior-outro--detail">
-                02 적극적으로 활동할 의지가 있는 학생
-              </Text>
-              <Text className="junior-outro--detail">
-                03 다양한 사람들과 소통을 즐기고 배려할 줄 아는 학생
-              </Text>
-              <Text className="junior-outro--detail">
-                04 성장에 대해 지속적으로 고민하는 학생
-              </Text>
+              <div className="outro__description-list">
+                <Text className="junior-outro--detail">
+                  01 web/app 개발에 관심이 있는 학생
+                </Text>
+                <Text className="junior-outro--detail">
+                  02 적극적으로 활동할 의지가 있는 학생
+                </Text>
+                <Text className="junior-outro--detail">
+                  03 다양한 사람들과 소통을 즐기고 배려할 줄 아는 학생
+                </Text>
+                <Text className="junior-outro--detail">
+                  04 성장에 대해 지속적으로 고민하는 학생
+                </Text>
+              </div>
             </div>
+
             <Button className="gray">PROB junior 1기 신청</Button>
           </div>
         </div>

@@ -1,13 +1,23 @@
 @import '../../../pages/mixin.scss';
 
 .section {
-  margin: 300px 0;
+  margin: 30rem 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    margin: 10rem 0;
+  }
+
   &__inner {
     @include inner;
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 4rem;
+    }
   }
 }
 
@@ -18,12 +28,25 @@
   }
 }
 
+.card {
+  &__content {
+    @media (max-width: 768px) {
+    }
+  }
+}
+
 .grid-4 {
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    grid-column-gap: 120px;
+    grid-column-gap: 12rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3rem;
+      grid-row-gap: 4rem;
+    }
   }
 }
 
@@ -31,5 +54,10 @@
   &__content {
     background-image: url('images/Vector.png');
     background-size: cover;
+
+    @media (max-width: 768px) {
+      background-image: none;
+      width: 100%;
+    }
   }
 }

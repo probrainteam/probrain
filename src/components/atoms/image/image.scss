@@ -3,32 +3,53 @@
 }
 
 .memoticon img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
 }
 
 .junior-property img {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
+  width: 15rem;
+  margin: 2rem;
 
-  filter: var(--imageFilter);
-}
-
-.logo img {
-  width: 108px;
-  display: block;
-  margin: 0px auto;
   filter: var(--imageFilter);
 
   @media (max-width: 768px) {
-    width: 80px;
+    width: 8rem;
+  }
+}
+
+.logo img {
+  width: 10rem;
+  filter: var(--imageFilter);
+
+  @media (max-width: 768px) {
+    width: 8rem;
+  }
+}
+
+.blueLogo img {
+  display: block;
+  margin: 0 auto;
+  width: 50rem;
+
+  @media (max-width: 768px) {
+    width: 30rem;
   }
 }
 
 .outro img {
+  display: block;
+  margin: 0 auto;
   filter: var(--imageFilter);
+
+  @media (max-width: 768px) {
+    width: 25rem;
+  }
 }
-.image-card img {
-  width: 350px;
+
+.activity img {
+  width: 35rem;
+
+  @media (max-width: 768px) {
+    width: 25rem;
+  }
 }

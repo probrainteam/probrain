@@ -4,13 +4,20 @@
   &__inner {
     @include inner;
   }
-  margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .row-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .column-flex {
@@ -21,5 +28,5 @@
 }
 
 .outro__description-list {
-  margin: 30px 0;
+  margin: 40px 0;
 }
