@@ -4,6 +4,10 @@
 
 .memoticon img {
   width: 20rem;
+
+  @media (max-width: 768px) {
+    width: 15rem;
+  }
 }
 
 .junior-property img {
@@ -50,6 +54,6 @@
   width: 35rem;
 
   @media (max-width: 768px) {
-    width: 25rem;
+    width: 23rem;
   }
 }
