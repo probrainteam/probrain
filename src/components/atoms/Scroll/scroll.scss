@@ -30,9 +30,17 @@
 }
 .scroll-right {
   transform: translateX(50%);
+
+  @media (max-width: 768px) {
+    transform: translateY(30%);
+  }
 }
 .scroll-left {
   transform: translateX(-50%);
+
+  @media (max-width: 768px) {
+    transform: translateY(30%);
+  }
 }
 .scroll-right.active,
 .scroll-left.active {
