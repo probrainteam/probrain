@@ -40,11 +40,10 @@
       scrollbar-width: none; /* Firefox */
     }
   }
-}
-
-.card::-webkit-scrollbar {
-  &__content {
-    display: none; /* Chrome, Safari, Opera*/
+  &__content::-webkit-scrollbar {
+    @media (max-width: 768px) {
+      display: none; /* Chrome, Safari, Opera*/
+    }
   }
 }
 
@@ -78,9 +77,8 @@
       scrollbar-width: none; /* Firefox */
     }
   }
-}
-.activity::-webkit-scrollbar {
-  &__content {
+
+  &__content::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
   }
 }
