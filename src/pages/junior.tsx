@@ -86,7 +86,7 @@ const Junior = () => {
         title="창단 동기"
         subtitle="PROB junior 는 왜 만들어졌을까요?"
       >
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ShadowCard
             className="right"
             title="다른 사람들은 어떻게 생각할까요?"
@@ -101,7 +101,7 @@ const Junior = () => {
             author="17학번 전병민"
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ShadowCard
             className="left"
             title="누구와 같이하면 좋을까요?"
@@ -114,7 +114,7 @@ const Junior = () => {
             author="19학번 변수미"
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ShadowCard
             className="right"
             title="학교 수업만으로 충분할까요?"
@@ -137,7 +137,7 @@ const Junior = () => {
       >
         <ScrollComponent
           className="scroll-up scroll-up-1"
-          scrollActiveLocation={150}
+          scrollActiveLocation={0}
         >
           <div>
             <Image src={property1.publicURL} className="junior-property" />
@@ -149,7 +149,7 @@ const Junior = () => {
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-2"
-          scrollActiveLocation={150}
+          scrollActiveLocation={0}
         >
           <div>
             <Image src={property2.publicURL} className="junior-property" />
@@ -162,7 +162,7 @@ const Junior = () => {
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-3"
-          scrollActiveLocation={150}
+          scrollActiveLocation={0}
         >
           <div>
             <Image src={property3.publicURL} className="junior-property" />
@@ -174,7 +174,7 @@ const Junior = () => {
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-4"
-          scrollActiveLocation={150}
+          scrollActiveLocation={0}
         >
           <div>
             <Image src={property4.publicURL} className="junior-property" />
@@ -195,7 +195,7 @@ const Junior = () => {
         title2="성장이 두렵지 않습니다."
         subtitle="PROB junior 는 다양한 활동들을 하며 함께 성장해요."
       >
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="01 활발한 정보 공유"
             detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
@@ -209,7 +209,7 @@ const Junior = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="02 세미나 개최"
             detail="내가 생각하는 것을 다른 사람들은 어떻게 생각할까요? 하나의 공통된
@@ -223,7 +223,7 @@ const Junior = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="03 모각코 활동"
             detail="혼자 공부하다보면 지치고 힘들 때가 많은 것 같아요. 팀원들과 같이
@@ -236,7 +236,7 @@ const Junior = () => {
             ]}
           />
         </ScrollComponent>
-        <ScrollComponent className="scroll-up" scrollActiveLocation={150}>
+        <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="04 프로젝트 참여"
             detail="포지션과 수준에 맞게 꾸려진 팀 단위로 프로젝트를 진행하고 학기 말에

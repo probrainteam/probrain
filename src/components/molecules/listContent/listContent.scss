@@ -1,4 +1,9 @@
 .list-card__list {
-  padding-top: 30px;
-  padding-left: 30px;
+  padding-top: 3rem;
+  padding-left: 3rem;
+
+  @media (max-width: 768px) {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
 }

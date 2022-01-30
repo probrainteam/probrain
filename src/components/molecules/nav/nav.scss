@@ -1,10 +1,10 @@
 .nav {
-  @media (max-width: 768px) {
-    display: none;
-  }
-
   &__inner {
     display: flex;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__item {

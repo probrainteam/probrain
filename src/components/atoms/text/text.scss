@@ -1,76 +1,156 @@
 .text {
+  &--nav {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &--author {
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-right: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
   &--main-title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   &--main-subtitle {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   &--content-title {
-    font-size: 24px;
-    color: #4caeea;
+    font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    color: #4caeea;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   &--content-detail {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.7;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &--list {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.7;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 
   &--section-title {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   &--section-subtitle {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 
   &--probrain-outro {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
-    margin: 50px 0;
+    margin: 5rem 0;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+    }
   }
 
   &--junior-intro {
+    font-size: 6rem;
+    font-weight: 700;
     width: fit-content;
     text-align: center;
-    font-size: 60px;
-    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   &--junior-intro--light {
+    font-size: 6rem;
+    font-weight: 300;
     width: fit-content;
     text-align: center;
-    font-size: 60px;
-    font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
 
   &--junior-property--bold {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 
   &--junior-property--light {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 
   &--junior-outro--title {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   &--junior-outro--detail {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 }

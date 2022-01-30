@@ -1,21 +1,9 @@
 @mixin inner {
   width: 100%;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
-
-  @media screen and (max-width: 1200px) {
-    max-width: 1024px;
-  }
-  @media screen and (max-width: 1024px) {
-    max-width: 900px;
-  }
-  @media screen and (max-width: 768px) {
-    max-width: 600px;
-  }
-  @media screen and (max-width: 480px) {
-    max-width: 320px;
-  }
 }
+
 @mixin flex-inner-column {
   display: flex;
   align-items: center;
@@ -26,9 +14,16 @@
 @mixin grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 100px;
-  grid-row-gap: 80px;
+  grid-column-gap: 10rem;
+  grid-row-gap: 8rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 5rem;
+  }
 }
+
 @mixin showX {
   &--left,
   &--right {
