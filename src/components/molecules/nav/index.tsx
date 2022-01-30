@@ -47,6 +47,7 @@ const Nav = ({ onToggleClick }: NavProps) => {
           <MoonIcon size="lg" />
         </button>
       </div>
+
       <BarsIcon onClick={onToggleClick} />
     </nav>
   );
