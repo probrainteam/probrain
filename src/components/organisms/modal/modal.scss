@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  background-color: var(--mainBackground);
+  color: var(--mainColor);
+  animation: background 0.5s ease-out forwards;
+}
+
+.mobile-nav-wrapper {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  animation: text 0.5s ease-out forwards;
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes background {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

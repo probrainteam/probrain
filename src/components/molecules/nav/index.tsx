@@ -11,7 +11,11 @@ declare global {
   }
 }
 
-const Nav = () => {
+interface NavProps {
+  onToggleClick: () => void;
+}
+
+const Nav = ({ onToggleClick }: NavProps) => {
   const getInitialColorMode = () => {
     if (typeof window !== 'undefined') {
       return window.__theme;
@@ -40,10 +44,10 @@ const Nav = () => {
           <Text className="nav">JUNIOR</Text>
         </Link>
         <button className="nav__icon-wrapper" onClick={darkModeHandling}>
-          <MoonIcon />
+          <MoonIcon size="lg" />
         </button>
       </div>
-      <BarsIcon />
+      <BarsIcon onClick={onToggleClick} />
     </nav>
   );
 };
