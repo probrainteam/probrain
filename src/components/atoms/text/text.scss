@@ -119,24 +119,22 @@
       font-size: 2.4rem;
     }
   }
-
-  &--junior-property--bold {
+  &--junior-property--bold , &--junior-property--light  {
     font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-
     @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+    @media (max-width: 576px) {
       font-size: 1.2rem;
     }
   }
+  &--junior-property--bold {
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
 
   &--junior-property--light {
-    font-size: 1.6rem;
     font-weight: 300;
-
-    @media (max-width: 768px) {
-      font-size: 1.2rem;
-    }
   }
 
   &--junior-outro--title {
