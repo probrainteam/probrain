@@ -55,6 +55,7 @@
   margin: 2rem 3rem;
 
   @media (max-width: 768px) {
-    width: 23rem;
+    max-width: 18rem;
+    height: 17rem;
   }
 }
