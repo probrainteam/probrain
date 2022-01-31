@@ -53,7 +53,9 @@
 .activity img {
   width: 35rem;
   margin: 2rem 3rem;
-
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
   @media (max-width: 768px) {
     max-width: 18rem;
     height: 17rem;
