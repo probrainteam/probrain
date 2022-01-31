@@ -97,27 +97,24 @@
       margin: 2rem 0;
     }
   }
-
-  &--junior-intro {
+  &--junior-intro , &--junior-intro--light  {
     font-size: 6rem;
-    font-weight: 700;
     width: fit-content;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 5rem;
 
+    }
     @media (max-width: 768px) {
       font-size: 2.4rem;
     }
   }
+  &--junior-intro {
+    font-weight: 700;
+  }
 
   &--junior-intro--light {
-    font-size: 6rem;
     font-weight: 300;
-    width: fit-content;
-    text-align: center;
-
-    @media (max-width: 768px) {
-      font-size: 2.4rem;
-    }
   }
   &--junior-property--bold , &--junior-property--light  {
     font-size: 1.6rem;
