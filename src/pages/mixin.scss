@@ -2,6 +2,13 @@
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    max-width: 100rem;
+  }
+  @media (max-width: 1024px) {
+    max-width: 80rem;
+
+  }
 }
 
 @mixin flex-inner-column {
@@ -16,12 +23,16 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10rem;
   grid-row-gap: 8rem;
-
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     grid-row-gap: 5rem;
   }
+  // @media (max-width: 768px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   grid-row-gap: 5rem;
+  // }
 }
 
 @mixin showX {

@@ -1,3 +1,5 @@
+@import '../../../pages/mixin.scss';
+
 .footer {
   height: 20rem;
   display: flex;
@@ -7,11 +9,12 @@
   font-size: 1.4rem;
 
   &__inner {
+    @include inner;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 120rem;
+    // width: 100%;
+    // max-width: 120rem;
     padding: 0 2rem;
   }
 

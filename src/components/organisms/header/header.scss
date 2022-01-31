@@ -1,13 +1,16 @@
+@import '../../../pages/mixin.scss';
+
 .header {
   width: 100%;
 
   &__inner {
+    @include inner;
+    // max-width: 120rem;
+    // margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 120rem;
     height: 8rem;
-    margin: 0 auto;
 
     @media (max-width: 768px) {
       height: 6rem;
