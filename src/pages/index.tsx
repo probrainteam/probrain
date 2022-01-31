@@ -84,11 +84,7 @@ const IndexPage = () => {
         <ScrollComponent className="scroll-left" scrollActiveLocation={0}>
           <ImageCard
             title="01 Membership Training (MT)"
-            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-        사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-        이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-        카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-        이야기를 나눠보세요."
+            detail="개발을 시작하기 전 서로를 잘 알아야 하는 것은 필수 사항이죠. Membership Training(MT)를 통해 같은 관심사를 가진 친구들과 이런저런 이야기를 나누어 서로의 친밀도를 높이고 앞으로의 동아리 활동의 방향성을 잡아보고 즐거움을 느껴보세요."
             src={mt.publicURL}
             className="left"
           />
@@ -96,11 +92,7 @@ const IndexPage = () => {
         <ScrollComponent className="scroll-right" scrollActiveLocation={0}>
           <ImageCard
             title="02 Homecoming day"
-            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-          사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-          이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-          카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-          이야기를 나눠보세요."
+            detail="개발자라는 꿈을 가지고 동아리 활동을 하다보면 실제 개발자 생활이 궁금해지기도 하는것은 당연한거에요. 우리 동아리에서 졸업한 선배들을 환영하며 개발자의 삶에 대해 듣다보면 개발자에 대한 꿈이 확실해지죠. 동아리 선배들과 한 자리에서 시간을 보내 동아리에 대한 정도 쌓고 우리에게 도움이 될만한 이야기도 들어보세요."
             src={homecoming.publicURL}
             className="right"
           />
@@ -108,11 +100,8 @@ const IndexPage = () => {
         <ScrollComponent className="scroll-left" scrollActiveLocation={0}>
           <ImageCard
             title="03 Web Education"
-            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-          사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-          이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-          카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-          이야기를 나눠보세요."
+            detail="개발을 하고싶더라도 혼자서 공부하는 것은 언제나 힘든 일이에요. 선배를 통해 친구들과 개발에 대한 지식을 습득하고 선배들의 팁을 들으며 개발에 한발짝 더 다가가보세요. 교육을 같이 듣는 친구들과 팀을 이루어 프로젝트를 진행하면서 궁금한 점도 물어볼 수 있는 교육이 될거에요.
+            "
             src={education.publicURL}
             className="left"
           />
@@ -120,11 +109,7 @@ const IndexPage = () => {
         <ScrollComponent className="scroll-right" scrollActiveLocation={0}>
           <ImageCard
             title="04 Web Contest"
-            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-          사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-          이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-          카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-          이야기를 나눠보세요."
+            detail="개발에 대한 공부를 하더라도 실제로 사용하지 않는다면 우리는 한 자리에 머무를수 밖에 없을거에요. 개발을 공부하고 우리가 습득한 기술들을 Web Contest를 통해 펼쳐보세요. 참가를 통해 자신이 성장하는 발판을 마련하는 것뿐 아니라 성과를 이루어 친구들과 상도받고 기쁨을 나눌 수 있는 소중한 경험을 쌓을수 있을거에요."
             src={contest.publicURL}
             className="right"
           />
