@@ -10,6 +10,7 @@ import Text from 'components/atoms/text';
 import Outro from 'components/organisms/outro';
 import { graphql, useStaticQuery } from 'gatsby';
 import ScrollComponent from 'components/atoms/Scroll';
+import Property from 'components/molecules/property';
 
 interface StaticImageType {
   memoticon1: {
@@ -137,52 +138,49 @@ const Junior = () => {
           className="scroll-up scroll-up-1"
           scrollActiveLocation={0}
         >
-          <div>
-            <Image src={property1.publicURL} className="junior-property" />
-            <Text className="junior-property--bold">01 웹 / 앱 개발 그룹</Text>
-            <Text className="junior-property--light">
-              PROB junior 는 웹 / 앱 개발자들을 위한 그룹입니다.
-            </Text>
-          </div>
+          <Property
+            className={'junior-property'}
+            title={'01 웹 / 앱 개발 그룹'}
+            content={'  PROB junior 는 웹 / 앱 개발자들을 위한 그룹입니다.'}
+            imgUrl={property1.publicURL}
+          />
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-2"
           scrollActiveLocation={0}
         >
-          <div>
-            <Image src={property2.publicURL} className="junior-property" />
-            <Text className="junior-property--bold">02 팀 중심 활동</Text>
-            <Text className="junior-property--light">
-              PROB junior 는 각 포지션에 맞게 꾸려진 팀 별로 프로젝트, 모각코
-              활동을 진행합니다.
-            </Text>
-          </div>
+          <Property
+            className={'junior-property'}
+            title={'02 팀 중심 활동'}
+            content={
+              'PROB junior 는 각 포지션에 맞게 꾸려진 팀 별로 프로젝트, 모각코 활동을 진행합니다.'
+            }
+            imgUrl={property2.publicURL}
+          />
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-3"
           scrollActiveLocation={0}
         >
-          <div>
-            <Image src={property3.publicURL} className="junior-property" />
-            <Text className="junior-property--bold">03 소통의 장</Text>
-            <Text className="junior-property--light">
-              PROB junior 는 활발한 질문과 소통을 추구합니다.
-            </Text>
-          </div>
+          <Property
+            className={'junior-property'}
+            title={'03 소통의 장'}
+            content={' PROB junior 는 활발한 질문과 소통을 추구합니다.'}
+            imgUrl={property3.publicURL}
+          />
         </ScrollComponent>
         <ScrollComponent
           className="scroll-up scroll-up-4"
           scrollActiveLocation={0}
         >
-          <div>
-            <Image src={property4.publicURL} className="junior-property" />
-            <Text className="junior-property--bold">
-              04 신뢰할 수 있는 동료
-            </Text>
-            <Text className="junior-property--light">
-              PROB junior 는 면접을 통해 개발 가능 인력을 선발하여 신뢰합니다.
-            </Text>
-          </div>
+          <Property
+            className={'junior-property'}
+            title={'   04 신뢰할 수 있는 동료'}
+            content={
+              'PROB junior 는 면접을 통해 개발 가능 인력을 선발하여 신뢰합니다.'
+            }
+            imgUrl={property4.publicURL}
+          />
         </ScrollComponent>
       </Section>
 
