@@ -22,6 +22,9 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10rem;
   grid-row-gap: 8rem;
+  @media (max-width: 1200px) {
+    grid-column-gap: 2rem;
+  }
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;

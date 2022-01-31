@@ -26,6 +26,7 @@
   &__content {
     @include grid-2;
     justify-items: right;
+    justify-content: space-between;
     @media  (max-width: 768px) {
       padding: 2rem;
     }
