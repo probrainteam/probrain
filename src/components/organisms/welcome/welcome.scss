@@ -12,7 +12,7 @@
   }
 
   &__title {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       margin-bottom: 2rem;
     }
   }
@@ -24,11 +24,12 @@
     align-items: center;
     padding: 0px 4rem 8rem 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
       text-align: center;
       padding: 4rem 0;
       margin-bottom: 5rem;
     }
+    
   }
 }

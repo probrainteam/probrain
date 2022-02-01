@@ -54,6 +54,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Welcome />
+      {/* ABOUT */}
       <Section
         className="grid-2"
         title="ABOUT"
