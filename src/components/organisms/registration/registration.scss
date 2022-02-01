@@ -14,6 +14,7 @@
 }
 
 .junior-intro {
+  position: relative;
   animation: intro 0.7s ease-out forwards;
   &__title {
     @include flex-inner-column;
@@ -30,7 +31,18 @@
     height: calc(100vh - 80px);
   }
 }
+.arrow-down-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 50px;
+  animation:downIcon 1s infinite alternate;  
 
+}
+@keyframes downIcon {
+  0%{transform:translate(0,0);}
+  100%{transform:translate(0,20px);}
+}
 @keyframes intro {
   0% {
     opacity: 0;
