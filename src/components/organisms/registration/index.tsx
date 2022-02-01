@@ -26,9 +26,12 @@ const Registration = ({
         </div>
         <Button className="gray"> {btnText}</Button>
       </div>
+      <div className="arrow-down-icon-container">
       <div className="arrow-down-icon">
         <ArrowDown height="40" width="40" />
       </div>
+      </div>
+     
     </section>
   );
 };

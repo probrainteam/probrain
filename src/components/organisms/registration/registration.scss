@@ -31,14 +31,19 @@
     height: calc(100vh - 80px);
   }
 }
-.arrow-down-icon {
+.arrow-down-icon-container {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 50px;
-  animation:downIcon 1s infinite alternate;  
+    left: 50%;
+    transform:translate(-50%, -50%);
+    bottom: 50px;
 
+  .arrow-down-icon {
+    
+    animation:downIcon 1s infinite alternate;  
+  
+  }
 }
+
 @keyframes downIcon {
   0%{transform:translate(0,0);}
   100%{transform:translate(0,20px);}
