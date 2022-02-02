@@ -77,7 +77,7 @@ const IndexPage = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 1500);
   }, []);
 
   const activityInfo = [
