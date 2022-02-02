@@ -44,22 +44,10 @@ const Modal = ({ onToggleClick }: ModalProps) => {
     <div className="modal">
       <XIcon onClick={onToggleClick} />
       <div className="mobile-nav-wrapper">
-        <Link
-          to="/"
-          activeStyle={{
-            textDecoration: 'underline var(--mainColor) 3px',
-            textUnderlinePosition: 'under',
-          }}
-        >
+        <Link to="/" activeClassName="link-active">
           <Text className={`mobile-nav`}>PROBRAIN</Text>
         </Link>
-        <Link
-          to="/junior"
-          activeStyle={{
-            textDecoration: 'underline var(--mainColor) 3px',
-            textUnderlinePosition: 'under',
-          }}
-        >
+        <Link to="/junior" activeClassName="link-active">
           <Text className={`mobile-nav`}>PROBRAIN JUNIOR</Text>
         </Link>
       </div>

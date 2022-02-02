@@ -11,6 +11,18 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  .link-active {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 3px;
+    }
+  }
 }
 
 .mobile-nav-wrapper {

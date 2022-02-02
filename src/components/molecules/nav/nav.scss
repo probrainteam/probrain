@@ -22,4 +22,16 @@
     border: none;
     color: var(--mainColor);
   }
+
+  .link-active {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 2px;
+    }
+  }
 }
