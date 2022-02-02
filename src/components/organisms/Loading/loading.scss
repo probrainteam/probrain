@@ -1,0 +1,42 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #54a7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loadingBackgroundKeyframe 1.5s forwards;
+  overflow: hidden;
+
+  z-index: 1010;
+
+  &-img {
+    animation: loadingKeyframe 1s forwards;
+  }
+}
+
+@keyframes loadingBackgroundKeyframe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadingKeyframe {
+  0% {
+    opacity: 0;
+  }
+  // 50% {
+  //   opacity: 1;
+  // }
+  100% {
+    opacity: 1;
+  }
+}

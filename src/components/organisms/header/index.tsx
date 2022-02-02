@@ -13,7 +13,13 @@ const Header = () => {
         <Logo />
         <Nav onToggleClick={() => setToggle(prev => !prev)} />
       </div>
-      {toggle ? <Modal onToggleClick={() => setToggle(prev => !prev)} /> : null}
+      {toggle ? (
+        <Modal
+          onToggleClick={() => {
+            setToggle(prev => !prev);
+          }}
+        />
+      ) : null}
     </header>
   );
 };

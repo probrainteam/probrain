@@ -7,7 +7,7 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
       dangerouslySetInnerHTML: {
         __html: `
         (() => {
-
+          
           let preferredTheme;
           try {
             preferredTheme = localStorage.getItem('color-mode');
