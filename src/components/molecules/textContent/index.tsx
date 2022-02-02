@@ -1,5 +1,4 @@
 import React from 'react';
-import './textContent.scss';
 import Text from 'components/atoms/text';
 
 interface TextContentProps {

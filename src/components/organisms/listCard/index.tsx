@@ -1,5 +1,5 @@
 import React from 'react';
-import './listCard.scss';
+
 import ListContent from 'components/molecules/listContent';
 import TextContent from 'components/molecules/textContent';
 

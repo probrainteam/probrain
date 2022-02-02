@@ -11,7 +11,7 @@ import ImageCard from 'components/organisms/imageCard';
 import TextContent from 'components/molecules/textContent';
 import Image from 'components/atoms/image';
 
-interface StaticImageType {
+interface IndexQueryType {
   blueLogo: {
     publicURL: string;
   };
@@ -27,12 +27,27 @@ interface StaticImageType {
   contest: {
     publicURL: string;
   };
+
+  meta: {
+    publicURL: string;
+  };
+
+  site: {
+    siteMetadata: {
+      title: string;
+      description: string;
+      siteUrl: string;
+    };
+  };
 }
 
 const IndexPage = () => {
-  const { blueLogo, mt, homecoming, education, contest } =
-    useStaticQuery<StaticImageType>(graphql`
+  const { site, meta, blueLogo, mt, homecoming, education, contest } =
+    useStaticQuery<IndexQueryType>(graphql`
       query {
+        meta: file(name: { eq: "meta" }) {
+          publicURL
+        }
         blueLogo: file(name: { eq: "logo-blue" }) {
           publicURL
         }
@@ -48,11 +63,24 @@ const IndexPage = () => {
         contest: file(name: { eq: "contest" }) {
           publicURL
         }
+
+        site {
+          siteMetadata {
+            title
+            description
+            siteUrl
+          }
+        }
       }
     `);
 
   return (
-    <Layout>
+    <Layout
+      title={site?.siteMetadata?.title}
+      description={site?.siteMetadata?.description}
+      url={site?.siteMetadata?.siteUrl}
+      image={meta.publicURL}
+    >
       <Welcome />
       {/* ABOUT */}
       <Section
