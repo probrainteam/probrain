@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import { graphql, useStaticQuery } from 'gatsby';
 import Layout from 'components/layout';
@@ -9,6 +9,7 @@ import Registration from 'components/organisms/registration';
 import ListCard from 'components/organisms/listCard';
 import ImageCard from 'components/organisms/imageCard';
 import About from 'components/organisms/about';
+import Loading from 'components/organisms/Loading/index.';
 
 interface IndexQueryType {
   blueLogo: {
@@ -72,6 +73,11 @@ const IndexPage = () => {
         }
       }
     `);
+  const [loading, setLoading] = useState<boolean>(true);
+  function loadingTimeout() {
+    setLoading(false);
+  }
+  setTimeout(loadingTimeout, 3000);
   const activityInfo = [
     {
       title: '01 Membership Training (MT)',
@@ -149,6 +155,7 @@ const IndexPage = () => {
       url={site?.siteMetadata?.siteUrl}
       image={meta.publicURL}
     >
+      {loading ? <Loading /> : ''}
       <Welcome />
       <About imgSrc={blueLogo.publicURL} />
       <Section

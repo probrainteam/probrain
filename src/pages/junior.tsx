@@ -4,7 +4,7 @@ import Layout from 'components/layout';
 import Registration from 'components/organisms/registration';
 import Section from 'components/organisms/section';
 import ListCard from 'components/organisms/listCard';
-import ShadowCard from 'components/organisms/shadowCard';
+import ShadowCard from 'components/organisms/section/shadowCard';
 import Outro from 'components/organisms/outro';
 import ScrollComponent from 'components/atoms/Scroll';
 import Property from 'components/molecules/property';
@@ -121,7 +121,7 @@ const Junior = () => {
     {
       title: '01 웹 / 앱 개발 그룹',
       content: 'PROB junior 는 웹 / 앱 개발자들을 위한 그룹입니다.',
-      src: property2.publicURL,
+      src: property1.publicURL,
     },
     {
       title: '02 팀 중심 활동',
