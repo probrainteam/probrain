@@ -28,11 +28,13 @@ const ScrollComponent = ({
     const { current } = scrollRef;
     if (current !== null) {
       const scroll: DOMRect = current.getBoundingClientRect();
-      console.log(
-        className,
-        scroll.top,
-        window.innerHeight - scrollActiveLocation,
-      );
+      // if (className == 'scroll-spy-registration') {
+      //   console.log(
+      //     className,
+      //     scroll.top,
+      //     window.innerHeight - scrollActiveLocation,
+      //   );
+      // }
       if (scroll.top < window.innerHeight - scrollActiveLocation) {
         setIsShow(true);
       } else {
