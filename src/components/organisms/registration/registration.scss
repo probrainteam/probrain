@@ -30,6 +30,10 @@
     @include inner;
     @include flex-inner-column;
     height: calc(100vh - 12rem);
+
+    @media (max-width: 768px) {
+      padding-bottom: 20rem;
+    }
   }
 }
 .arrow-down-icon-container {

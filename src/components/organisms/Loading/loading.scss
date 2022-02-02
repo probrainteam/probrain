@@ -20,6 +20,10 @@
   &-img img {
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    padding-bottom: 20rem;
+  }
 }
 
 @keyframes loadingBackgroundKeyframe {
