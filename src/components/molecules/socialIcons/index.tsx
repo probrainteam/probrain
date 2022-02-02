@@ -8,6 +8,7 @@ const SocialIcons = () => (
       href="https://github.com/probrainteam"
       target="_blank"
       aria-label="github"
+      rel="noopener noreferrer"
     >
       <GithubIcon />
     </a>
@@ -15,6 +16,7 @@ const SocialIcons = () => (
       href="https://www.instagram.com/jeonbyeongm1n/?hl=ko"
       target="_blank"
       aria-label="instagram"
+      rel="noopener noreferrer"
     >
       <InstagramIcon />
     </a>
