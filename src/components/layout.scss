@@ -26,23 +26,22 @@ body {
 
   &.dark {
     --mainBackground: #000000;
-    --cardBg : #1a1a1a;
+    --cardBg: #1a1a1a;
     --mainColor: #ffffff;
     --imageFilter: invert();
-    --buttonBg : #1a1a1a;
+    --buttonBg: #1a1a1a;
     --buttonColor: #ffffff;
     --buttonHoverBg: #262626;
   }
 
   &.light {
     --mainBackground: #ffffff;
-    --cardBg : #ffffff
+    --cardBg: #ffffff;
     --mainColor: #000000;
     --imageFilter: opacity(1);
-    --buttonBg : #eeeeee;
+    --buttonBg: #eeeeee;
     --buttonColor: #000000;
     --buttonHoverBg: #e5e5e5;
-
   }
 }
 

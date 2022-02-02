@@ -27,7 +27,7 @@
     @include grid-2;
     justify-items: right;
     justify-content: space-between;
-    @media  (max-width: 768px) {
+    @media (max-width: 768px) {
       padding: 2rem;
     }
   }
@@ -58,7 +58,6 @@
     grid-column-gap: 12rem;
     @media (max-width: 1200px) {
       grid-column-gap: 6rem;
-
     }
     @media (max-width: 1024px) {
       grid-template-columns: 1fr 1fr;
@@ -76,6 +75,7 @@
 
     @media (max-width: 768px) {
       background-image: none;
+      background-size: none;
       overflow-y: scroll;
       display: flex;
       padding: 2rem;
@@ -85,6 +85,8 @@
   }
 
   &__content::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+    @media (max-width: 768px) {
+      display: none; /* Chrome, Safari, Opera*/
+    }
   }
 }

@@ -27,15 +27,40 @@ const Modal = ({ onToggleClick }: ModalProps) => {
     window.__setPreferredTheme(colorMode);
   }, [colorMode]);
 
+  useEffect(() => {
+    document.body.style.cssText = `
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = '';
+      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+    };
+  }, []);
+
   return (
     <div className="modal">
       <XIcon onClick={onToggleClick} />
       <div className="mobile-nav-wrapper">
-        <Link to="/">
-          <Text className="mobile-nav">PROBRAIN</Text>
+        <Link
+          to="/"
+          activeStyle={{
+            textDecoration: 'underline var(--mainColor) 3px',
+            textUnderlinePosition: 'under',
+          }}
+        >
+          <Text className={`mobile-nav`}>PROBRAIN</Text>
         </Link>
-        <Link to="/junior">
-          <Text className="mobile-nav">PROBRAIN JUNIOR</Text>
+        <Link
+          to="/junior"
+          activeStyle={{
+            textDecoration: 'underline var(--mainColor) 3px',
+            textUnderlinePosition: 'under',
+          }}
+        >
+          <Text className={`mobile-nav`}>PROBRAIN JUNIOR</Text>
         </Link>
       </div>
       <div onClick={darkModeHandling}>

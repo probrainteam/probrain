@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './index.scss';
+import React, { useState, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Layout from 'components/layout';
 import ScrollComponent from 'components/atoms/Scroll';
@@ -73,11 +73,13 @@ const IndexPage = () => {
         }
       }
     `);
+
   const [loading, setLoading] = useState<boolean>(true);
-  function loadingTimeout() {
-    setLoading(false);
-  }
-  setTimeout(loadingTimeout, 3000);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+
   const activityInfo = [
     {
       title: '01 Membership Training (MT)',
@@ -108,6 +110,7 @@ const IndexPage = () => {
       className: 'right',
     },
   ];
+
   const tmiInfo = [
     {
       title: ' 01 전통이 있는 동아리 (since 2002)',
@@ -130,8 +133,10 @@ const IndexPage = () => {
         '프로브레인에서 졸업한 선배들이 다방면의 분야의 다양한 회사로 취업했어요. 홉커밍 데이를 통해 선배들과 다양한 이야기를 하고 많은 정보를 얻어보세요.',
     },
   ];
-  const activityList = activityInfo.map(item => (
+
+  const activityList = activityInfo.map((item, index) => (
     <ScrollComponent
+      key={index}
       className={`scroll-${item.className}`}
       scrollActiveLocation={0}
     >
@@ -143,11 +148,13 @@ const IndexPage = () => {
       />
     </ScrollComponent>
   ));
-  const tmiList = tmiInfo.map(item => (
-    <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
+
+  const tmiList = tmiInfo.map((item, index) => (
+    <ScrollComponent key={index} className="scroll-up" scrollActiveLocation={0}>
       <ListCard title={item.title} detail={item.detail} detailList={[]} />
     </ScrollComponent>
   ));
+
   return (
     <Layout
       title={site?.siteMetadata?.title}
@@ -155,7 +162,7 @@ const IndexPage = () => {
       url={site?.siteMetadata?.siteUrl}
       image={meta.publicURL}
     >
-      {loading ? <Loading /> : ''}
+      {loading ? <Loading /> : null}
       <Welcome />
       <About imgSrc={blueLogo.publicURL} />
       <Section

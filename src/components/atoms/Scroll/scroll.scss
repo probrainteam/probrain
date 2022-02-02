@@ -12,6 +12,12 @@
 
 .scroll-up {
   transform: translateY(35%);
+
+  &.card {
+    @media (max-width: 768px) {
+      transform: none;
+    }
+  }
 }
 .scroll-up-1 {
   transform: translateY(10%);
@@ -32,20 +38,24 @@
   transform: translateX(50%);
 
   @media (max-width: 768px) {
-    transform: translateY(30%);
+    transform: none;
   }
 }
 .scroll-left {
   transform: translateX(-50%);
 
   @media (max-width: 768px) {
-    transform: translateY(30%);
+    transform: none;
   }
 }
 .scroll-right.active,
 .scroll-left.active {
   transform: translateX(0);
   opacity: 1;
+
+  @media (max-width: 768px) {
+    transform: none;
+  }
 }
 .scroll-up.active,
 .scroll-down.active {

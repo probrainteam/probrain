@@ -16,6 +16,7 @@
 .junior-intro {
   position: relative;
   animation: intro 0.7s ease-out forwards;
+
   &__title {
     @include flex-inner-column;
     margin-bottom: 7rem;
@@ -28,7 +29,7 @@
   &__inner {
     @include inner;
     @include flex-inner-column;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 12rem);
   }
 }
 .arrow-down-icon-container {

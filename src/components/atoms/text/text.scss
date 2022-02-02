@@ -22,9 +22,10 @@
       font-size: 1rem;
     }
   }
-  &--main-title,  &--main-subtitle {
+  &--main-title,
+  &--main-subtitle {
     font-size: 4.8rem;
-    @media (max-width: 1024px ) {
+    @media (max-width: 1024px) {
       font-size: 3.8rem;
     }
     @media (max-width: 768px) {
@@ -97,13 +98,13 @@
       margin: 2rem 0;
     }
   }
-  &--junior-intro , &--junior-intro--light  {
+  &--junior-intro,
+  &--junior-intro--light {
     font-size: 6rem;
     width: fit-content;
     text-align: center;
     @media (max-width: 1024px) {
       font-size: 5rem;
-
     }
     @media (max-width: 768px) {
       font-size: 2.4rem;
@@ -116,7 +117,8 @@
   &--junior-intro--light {
     font-weight: 300;
   }
-  &--junior-property--bold , &--junior-property--light  {
+  &--junior-property--bold,
+  &--junior-property--light {
     font-size: 1.6rem;
     @media (max-width: 768px) {
       font-size: 1.4rem;

@@ -4,7 +4,7 @@ import Layout from 'components/layout';
 import Registration from 'components/organisms/registration';
 import Section from 'components/organisms/section';
 import ListCard from 'components/organisms/listCard';
-import ShadowCard from 'components/organisms/section/shadowCard';
+import ShadowCard from 'components/shadowCard';
 import Outro from 'components/organisms/outro';
 import ScrollComponent from 'components/atoms/Scroll';
 import Property from 'components/molecules/property';
@@ -91,6 +91,9 @@ const Junior = () => {
       }
     }
   `);
+
+  console.log(site?.siteMetadata?.siteUrl);
+
   const foundInfo = [
     {
       className: 'right',
@@ -117,6 +120,7 @@ const Junior = () => {
       author: '17학번 최현석',
     },
   ];
+
   const juniorPropertyInfo = [
     {
       title: '01 웹 / 앱 개발 그룹',
@@ -141,6 +145,7 @@ const Junior = () => {
       src: property4.publicURL,
     },
   ];
+
   const listCardInfo = [
     {
       title: '01 활발한 정보 공유',
@@ -181,8 +186,13 @@ const Junior = () => {
       ],
     },
   ];
-  const foundList = foundInfo.map(item => (
-    <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
+
+  const foundList = foundInfo.map((item, index) => (
+    <ScrollComponent
+      key={index}
+      className="scroll-up card"
+      scrollActiveLocation={0}
+    >
       <ShadowCard
         className={item.className}
         title={item.title}
@@ -192,21 +202,24 @@ const Junior = () => {
       />
     </ScrollComponent>
   ));
+
   const juniorPropertyList = juniorPropertyInfo.map((item, index) => (
     <ScrollComponent
       className={`scroll-up scroll-up-${index + 1}`}
       scrollActiveLocation={0}
+      key={index}
     >
       <Property
         className={'junior-property'}
         title={item.title}
-        content={(item.content = '')}
+        content={item.content}
         imgUrl={item.src}
       />
     </ScrollComponent>
   ));
-  const listCardList = listCardInfo.map(item => (
-    <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
+
+  const listCardList = listCardInfo.map((item, index) => (
+    <ScrollComponent key={index} className="scroll-up" scrollActiveLocation={0}>
       <ListCard
         title={item.title}
         detail={item.detail}
@@ -214,6 +227,7 @@ const Junior = () => {
       />
     </ScrollComponent>
   ));
+
   return (
     <Layout
       title={site?.siteMetadata?.title}
@@ -222,17 +236,12 @@ const Junior = () => {
       image={meta.publicURL}
     >
       {/* intro section */}
-      <ScrollComponent
-        className="scroll-spy-registration"
-        scrollActiveLocation={0}
-      >
-        <Registration
-          className="junior-intro"
-          btnText="PROB junior 1기 신청"
-          lightTitle="PROB junior와 함께 성장할"
-          title="미래의 훌륭한 인재들을 모집해요"
-        />
-      </ScrollComponent>
+      <Registration
+        className="junior-intro"
+        btnText="PROB junior 1기 신청"
+        lightTitle="PROB junior와 함께 성장할"
+        title="미래의 훌륭한 인재들을 모집해요"
+      />
       {/* content-1 section */}
       <Section
         className="card"

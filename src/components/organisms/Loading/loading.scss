@@ -16,6 +16,10 @@
   &-img {
     animation: loadingKeyframe 1s forwards;
   }
+
+  &-img img {
+    width: 100%;
+  }
 }
 
 @keyframes loadingBackgroundKeyframe {
@@ -33,9 +37,6 @@
   0% {
     opacity: 0;
   }
-  // 50% {
-  //   opacity: 1;
-  // }
   100% {
     opacity: 1;
   }
