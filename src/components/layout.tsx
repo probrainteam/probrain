@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import './layout.scss';
 import Header from 'components/organisms/header';
 import Footer from 'components/organisms/footer';
