@@ -6,8 +6,7 @@
 .scroll-left,
 .scroll-right {
   opacity: 0;
-
-  transition: all 1s ease-out;
+  transition: all 1.1s ease-out;
 }
 
 .scroll-up {
@@ -35,14 +34,14 @@
   transform: translateY(-50%);
 }
 .scroll-right {
-  transform: translateX(50%);
+  transform: translateX(25%);
 
   @media (max-width: 768px) {
     transform: none;
   }
 }
 .scroll-left {
-  transform: translateX(-50%);
+  transform: translateX(-25%);
 
   @media (max-width: 768px) {
     transform: none;

@@ -4,14 +4,14 @@ import {
   faEnvelopeSquare,
   faMoon,
   faBars,
-  faTimes,
+  faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 import './icon.scss';
 
 interface IconProps {
-  onClick?: React.MouseEventHandler<SVGSVGElement>;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
   size?: SizeProp;
   className?: string;
 }
@@ -37,9 +37,13 @@ export const MoonIcon = ({ size, className }: IconProps) => (
 );
 
 export const BarsIcon = ({ onClick }: IconProps) => (
-  <FontAwesomeIcon onClick={onClick} className="bars" icon={faBars} size="lg" />
+  <div onClick={onClick} className="icon-wrapper">
+    <FontAwesomeIcon className="bars" icon={faBars} size="lg" />
+  </div>
 );
 
 export const XIcon = ({ onClick }: IconProps) => (
-  <FontAwesomeIcon onClick={onClick} className="x" icon={faTimes} size="2x" />
+  <div onClick={onClick} className="x-icon-wrapper">
+    <FontAwesomeIcon className="x" icon={faArrowLeft} size="2x" />
+  </div>
 );
