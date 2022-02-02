@@ -37,10 +37,24 @@ const Nav = ({ onToggleClick }: NavProps) => {
   return (
     <nav className="nav">
       <div className="nav__inner">
-        <Link to="/" className="nav__item">
+        <Link
+          to="/"
+          activeStyle={{
+            textDecoration: 'underline black 2px',
+            textUnderlinePosition: 'under',
+          }}
+          className="nav__item"
+        >
           <Text className="nav">PROBRAIN</Text>
         </Link>
-        <Link to="/junior" className="nav__item">
+        <Link
+          to="/junior"
+          activeStyle={{
+            textDecoration: 'underline black 2px',
+            textUnderlinePosition: 'under',
+          }}
+          className="nav__item"
+        >
           <Text className="nav">JUNIOR</Text>
         </Link>
         <button

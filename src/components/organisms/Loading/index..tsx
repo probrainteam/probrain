@@ -1,31 +1,26 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import './loading.scss';
-interface IndexQueryType {
+
+interface LoadingQueryType {
   logo: {
     publicURL: string;
   };
 }
+
 const Loading = () => {
-  const { logo } = useStaticQuery<IndexQueryType>(graphql`
+  const { logo } = useStaticQuery<LoadingQueryType>(graphql`
     query {
       logo: file(name: { eq: "logo-white" }) {
         publicURL
       }
-      site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-        }
-      }
     }
   `);
-  console.log('Loading');
+
   return (
     <div className="loading">
       <div className="loading-img">
-        <img src={logo.publicURL} alt="" />
+        <img src={logo.publicURL} alt="loading-logo" />
       </div>
     </div>
   );
