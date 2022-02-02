@@ -1,18 +1,15 @@
 import React from 'react';
-
+import { graphql, useStaticQuery } from 'gatsby';
 import Layout from 'components/layout';
 import Registration from 'components/organisms/registration';
 import Section from 'components/organisms/section';
 import ListCard from 'components/organisms/listCard';
 import ShadowCard from 'components/organisms/shadowCard';
-import Image from 'components/atoms/image';
-import Text from 'components/atoms/text';
 import Outro from 'components/organisms/outro';
-import { graphql, useStaticQuery } from 'gatsby';
 import ScrollComponent from 'components/atoms/Scroll';
 import Property from 'components/molecules/property';
 
-interface StaticImageType {
+interface JuniorQueryType {
   memoticon1: {
     publicURL: string;
   };
@@ -34,10 +31,23 @@ interface StaticImageType {
   property4: {
     publicURL: string;
   };
+  meta: {
+    publicURL: string;
+  };
+
+  site: {
+    siteMetadata: {
+      title: string;
+      description: string;
+      siteUrl: string;
+    };
+  };
 }
 
 const Junior = () => {
   const {
+    site,
+    meta,
     memoticon1,
     memoticon2,
     memoticon3,
@@ -45,7 +55,7 @@ const Junior = () => {
     property2,
     property3,
     property4,
-  } = useStaticQuery<StaticImageType>(graphql`
+  } = useStaticQuery<JuniorQueryType>(graphql`
     query {
       memoticon1: file(name: { eq: "memoticon1" }) {
         publicURL
@@ -68,11 +78,27 @@ const Junior = () => {
       property4: file(name: { eq: "property4" }) {
         publicURL
       }
+      meta: file(name: { eq: "meta" }) {
+        publicURL
+      }
+
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+        }
+      }
     }
   `);
 
   return (
-    <Layout>
+    <Layout
+      title={site?.siteMetadata?.title}
+      description={site?.siteMetadata?.description}
+      url={site?.siteMetadata?.siteUrl}
+      image={meta.publicURL}
+    >
       {/* intro section */}
       <ScrollComponent
         className="scroll-spy-registration"
