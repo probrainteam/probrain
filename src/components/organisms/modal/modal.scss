@@ -8,6 +8,7 @@
   background-color: var(--mainBackground);
   color: var(--mainColor);
   animation: background 0.5s ease-out forwards;
+  overflow: hidden;
 }
 
 .mobile-nav-wrapper {
