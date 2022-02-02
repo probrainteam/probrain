@@ -43,7 +43,11 @@ const Nav = ({ onToggleClick }: NavProps) => {
         <Link to="/junior" className="nav__item">
           <Text className="nav">JUNIOR</Text>
         </Link>
-        <button className="nav__icon-wrapper" onClick={darkModeHandling}>
+        <button
+          className="nav__icon-wrapper"
+          onClick={darkModeHandling}
+          aria-label="mode-change"
+        >
           <MoonIcon size="lg" />
         </button>
       </div>
