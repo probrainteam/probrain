@@ -19,6 +19,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*.tsx", "src/pages/announce/announce.sscs"],
+  "include": ["src/**/*.tsx", "src/custom.d.ts"],
   "exclude": ["node_modules"]
 }

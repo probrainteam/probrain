@@ -68,11 +68,8 @@ const IndexPage = () => {
           <TextContent
             className=""
             title="웹 개발 동아리"
-            detail="개발이라는 같은 관심사를 가지고, 성장이라는 같은 목적을 가진
-              사람들이 모이면 개발에 대한 이런저런 이야기를 나누는 것은 전혀
-              이상한 일이 아니죠. 오직 개발 관련 정보를 공유하기 위해 개설된
-              카카오톡 오픈 채팅방과 디스코드 채널에서 눈치보지 않고 자유롭게
-              이야기를 나눠보세요."
+            detail="프로브레인은 개발자를 꿈꾸는 모두를 위한 동아리입니다. 활발한 활동을 추구하고 세미나, 교육, 프로젝트를 통해 훌륭한 FE / BE 개발자를 양성하는 것이 목표입니다.
+            "
           />
         </ScrollComponent>
       </Section>
@@ -135,28 +132,21 @@ const IndexPage = () => {
         <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="02 의욕적인 동아리"
-            detail="PROB Junior을 통하여 자신의 팀원을 찾아서 자신이 생각하고 있는
-            프로젝트를 시작해 볼 수 있으며 팀원으로 참여하여서 기여할 수도 있
-            습니다. 더욱 많은 정보를 원하면 사이트 우측 상단의 JUNIOR 카테
-            고리로 이동해 보세요!"
+            detail="프로브레인은 활발한 활동을 추구해요. 공부, 친목 모두 열심히 해요. 프로브레인 스터디 그룹인 PROB Junior에서는 개발에 대해 더 깊은 공부를 시작할 수 있어요."
             detailList={[]}
           />
         </ScrollComponent>
         <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="03 개발과 친목이 공존하는 동아리"
-            detail="혼자 공부하다보면 지치고 힘들 때가 많은 것 같아요. 팀원들과 같이
-              모여서 각자 코딩하는 모각코를 진행합니다. 분명 개발에 생기를
-              불어넣어주는 활동이 될거에요."
+            detail="프로브레인에서는 친구들과의 개발 공부는 물론 다양한 행사를 진행하고 있어요. 서로의 친밀감을 쌓을 수 있는 동아리 활동을 통해 개발활동과 친목활동을 해보세요."
             detailList={[]}
           />
         </ScrollComponent>
         <ScrollComponent className="scroll-up" scrollActiveLocation={0}>
           <ListCard
             title="04 선배들의 OUTPUT이 좋은 동아리"
-            detail="포지션과 수준에 맞춰 팀이 꾸려져요. 팀 단위로 프로젝트를 진행하고
-              학기 말에 발표회를 진행해요. 팀 별로 만든 프로젝트를 테스트 및
-              배포하고 기회가 된다면 다양한 대회에 출전도 해보세요."
+            detail="프로브레인에서 졸업한 선배들이 다방면의 분야의 다양한 회사로 취업했어요. 홉커밍 데이를 통해 선배들과 다양한 이야기를 하고 많은 정보를 얻어보세요."
             detailList={[]}
           />
         </ScrollComponent>

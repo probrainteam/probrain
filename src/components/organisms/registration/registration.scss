@@ -33,21 +33,24 @@
 }
 .arrow-down-icon-container {
   position: absolute;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 50px;
 
-  .arrow-down-icon {
-    
-    animation:downIcon 1s infinite alternate;  
-  
+  .arrow-down-icon-wrapper {
+    animation: downIcon 0.7s infinite alternate;
   }
 }
 
 @keyframes downIcon {
-  0%{transform:translate(0,0);}
-  100%{transform:translate(0,20px);}
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
 }
+
 @keyframes intro {
   0% {
     opacity: 0;
