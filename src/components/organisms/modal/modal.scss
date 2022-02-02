@@ -7,7 +7,6 @@
   z-index: 1001;
   background-color: var(--mainBackground);
   color: var(--mainColor);
-  animation: background 0.3s ease-out forwards;
 
   .link-active {
     text-decoration: underline;
@@ -29,13 +28,4 @@
   align-content: center;
   justify-content: center;
   width: 100%;
-}
-
-@keyframes background {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
