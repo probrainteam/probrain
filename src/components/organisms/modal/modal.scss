@@ -8,9 +8,6 @@
   background-color: var(--mainBackground);
   color: var(--mainColor);
   animation: background 0.5s ease-out forwards;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 
   .link-active {
     text-decoration: underline;
