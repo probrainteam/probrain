@@ -74,13 +74,17 @@ const Junior = () => {
   return (
     <Layout>
       {/* intro section */}
-      <Registration
-        className="junior-intro"
-        btnText="PROB junior 1기 신청"
-        lightTitle="PROB junior와 함께 성장할"
-        title="미래의 훌륭한 인재들을 모집해요"
-      />
-
+      <ScrollComponent
+        className="scroll-spy-registration"
+        scrollActiveLocation={0}
+      >
+        <Registration
+          className="junior-intro"
+          btnText="PROB junior 1기 신청"
+          lightTitle="PROB junior와 함께 성장할"
+          title="미래의 훌륭한 인재들을 모집해요"
+        />
+      </ScrollComponent>
       {/* content-1 section */}
       <Section
         className="card"
