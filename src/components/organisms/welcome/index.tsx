@@ -30,7 +30,7 @@ const Welcome = () => {
           </div>
           <Button
             url={
-              'https://docs.google.com/forms/d/1tpDN6Tg7tDaOFJc5VErKlTTLnXpdL886yyQ0qdEljJQ/edit?usp=drive_open'
+              'https://docs.google.com/forms/d/e/1FAIpQLSdJKBoffTumC0LqglGTVrl08DTdEsDXA1lkXm-F-7qhhFX69A/viewform?usp=sf_link'
             }
             className="gray"
           >

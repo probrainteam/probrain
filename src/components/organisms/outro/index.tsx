@@ -50,7 +50,7 @@ const Outro = () => {
 
             <Button
               className="gray"
-              url={`https://docs.google.com/forms/d/1Pk9n9w0vf9ZMzuJiLOvwPBsrGBd61I9u7tJiiFz-ba4/edit`}
+              url={`https://docs.google.com/forms/d/e/1FAIpQLScCj-Ba8a-ec1R_mcV-vOg-iTB_dHnjvdalw7KvUQZuQmKZFA/viewform?usp=sf_link`}
             >
               PROB junior 1기 신청
             </Button>
