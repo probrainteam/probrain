@@ -23,8 +23,10 @@ function Seo({ url, title, description, image }: SeoProps) {
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={title} />
 
-      {/* // TODO : content 채우기 */}
-      <meta name="google-site-verification" content="" />
+      <meta
+        name="google-site-verification"
+        content="S9Myi5pYs9AGTgFfHPTz_EN5CYONAq_d_phuEjQR3Z8"
+      />
       <meta name="naver-site-verification" content="" />
 
       <html lang="ko" />
