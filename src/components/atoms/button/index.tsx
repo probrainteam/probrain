@@ -9,11 +9,9 @@ interface ButtonProps {
 
 const Button = ({ children, className, url }: ButtonProps) => {
   return (
-    <button className={`button button--${className}`}>
-      <a href={url} target="_blank" rel="noreferrer noopener">
-        {children}
-      </a>
-    </button>
+    <a href={url} target="_blank" rel="noreferrer noopener">
+      <button className={`button button--${className}`}>{children}</button>
+    </a>
   );
 };
 
