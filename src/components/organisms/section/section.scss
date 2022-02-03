@@ -70,9 +70,6 @@
 
 .activity {
   &__content {
-    background-image: url('images/Vector.png');
-    background-size: cover;
-
     @media (max-width: 768px) {
       background-image: none;
       background-size: none;

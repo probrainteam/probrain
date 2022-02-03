@@ -17,12 +17,10 @@
   filter: var(--imageFilter);
   @media (max-width: 768px) {
     width: 12rem;
-
   }
   @media (max-width: 576px) {
     width: 8rem;
   }
-  
 }
 
 .logo img {
@@ -54,14 +52,18 @@
   }
 }
 
-.activity img {
-  width: 35rem;
+.activity__img {
   margin: 2rem 3rem;
+  height: 25rem;
+  width: auto;
   @media (max-width: 1024px) {
     margin: 0;
   }
   @media (max-width: 768px) {
-    max-width: 18rem;
     height: 17rem;
+  }
+  img {
+    object-fit: contain;
+    height: 100%;
   }
 }
