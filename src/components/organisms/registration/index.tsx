@@ -9,6 +9,7 @@ interface RegistrationProps {
   title: string;
   lightTitle?: string;
   btnText: string;
+  url?: string;
 }
 
 const Registration = ({
@@ -16,6 +17,7 @@ const Registration = ({
   btnText,
   lightTitle,
   title,
+  url,
 }: RegistrationProps) => {
   return (
     <section className={`${className}`}>
@@ -24,7 +26,9 @@ const Registration = ({
           <Text className={`${className}--light`}>{lightTitle}</Text>
           <Text className={className}>{title}</Text>
         </div>
-        <Button className="gray"> {btnText}</Button>
+        <Button url={url} className="gray">
+          {btnText}
+        </Button>
       </div>
       {className === 'junior-intro' ? (
         <div className="arrow-down-icon-container">

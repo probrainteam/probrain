@@ -20,7 +20,9 @@ const SocialIcons = () => (
     >
       <InstagramIcon />
     </a>
-    <EmailIcon />
+    <a href="mailto:prob.dev.2022@gmail.com" aria-label="mail">
+      <EmailIcon />
+    </a>
   </div>
 );
 

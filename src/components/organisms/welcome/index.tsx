@@ -28,7 +28,14 @@ const Welcome = () => {
             <Text className="main-subtitle">프로브레인과 함께 추억을 쌓을</Text>
             <Text className="main-title">멋진 친구를 찾고 있어요</Text>
           </div>
-          <Button className="gray">PROBRAIN 가입 신청</Button>
+          <Button
+            url={
+              'https://docs.google.com/forms/d/1tpDN6Tg7tDaOFJc5VErKlTTLnXpdL886yyQ0qdEljJQ/edit?usp=drive_open'
+            }
+            className="gray"
+          >
+            PROBRAIN 가입 신청
+          </Button>
         </div>
         <Image className="welcome-image" src={main.publicURL} />
       </div>

@@ -22,7 +22,7 @@ const About = ({ imgSrc }: ListCardProps) => {
         <TextContent
           className=""
           title="웹 개발 동아리"
-          detail="프로브레인은 개발자를 꿈꾸는 모두를 위한 동아리입니다. 활발한 활동을 추구하고 세미나, 교육, 프로젝트를 통해 훌륭한 FE / BE 개발자를 양성하는 것이 목표입니다.
+          detail="프로브레인은 개발자를 꿈꾸는 모두를 위한 동아리입니다. 활발한 활동을 추구하며 세미나, 교육, 프로젝트를 통해 훌륭한 FE / BE 개발자를 양성합니다.
         "
         />
       </ScrollComponent>
