@@ -3,7 +3,7 @@ module.exports = {
     title: `PROBRAIN`,
     description: `충남대학교 웹 개발 동아리 PROBRAIN`,
     author: `@probrain`,
-    siteUrl: `https://probrain.gatsbyjs.io/`, // TODO:: 이후 변경
+    siteUrl: `https://probrain.site/`, // TODO:: 이후 변경
   },
   plugins: [
     {
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: `https://probrain.gatsbyjs.io/`, // TODO:: 이후 변경
+        siteUrl: `https://probrain.site/`, // TODO:: 이후 변경
         stripQueryString: true,
       },
     },
