@@ -34,7 +34,7 @@ const Outro = () => {
 
               <div className="outro__description-list">
                 <Text className="junior-outro--detail">
-                  01 web/app 개발에 관심이 있는 학생
+                  01 개발에 관심이 있는 학생
                 </Text>
                 <Text className="junior-outro--detail">
                   02 적극적으로 활동할 의지가 있는 학생
