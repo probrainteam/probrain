@@ -8,6 +8,7 @@ import ShadowCard from 'components/shadowCard';
 import Outro from 'components/organisms/outro';
 import ScrollComponent from 'components/atoms/Scroll';
 import Property from 'components/molecules/property';
+import About from 'components/organisms/about';
 
 interface JuniorQueryType {
   memoticon1: {
@@ -34,7 +35,9 @@ interface JuniorQueryType {
   meta: {
     publicURL: string;
   };
-
+  junior: {
+    publicURL: string;
+  };
   site: {
     siteMetadata: {
       title: string;
@@ -48,6 +51,7 @@ const Junior = () => {
   const {
     site,
     meta,
+    junior,
     memoticon1,
     memoticon2,
     memoticon3,
@@ -78,6 +82,9 @@ const Junior = () => {
       property4: file(name: { eq: "property4" }) {
         publicURL
       }
+      junior: file(name: { eq: "junior" }) {
+        publicURL
+      }
       meta: file(name: { eq: "meta" }) {
         publicURL
       }
@@ -92,14 +99,12 @@ const Junior = () => {
     }
   `);
 
-  console.log(site?.siteMetadata?.siteUrl);
-
   const foundInfo = [
     {
       className: 'right',
       title: '다른 사람들은 어떻게 생각할까요?',
       detail:
-        '개발을 할 때 내가 하고 있는 것이 맞는지, 혹은 다른 사람들은 어떻게 생각하고 하는지 궁금할 때가 많았습니다. 그래서 같은 목적을 가진 사람들이 모인 그룹을 만들어 지식을 공유하고 같이 공부할 수 있는 환경을 만들고자 했습니다. 친한 사람들과 같이 프로젝트도 진행하면서 자신의 포트폴리오를 만들어나갈 수 있는 기회가 될 것이라 생각합니다.',
+        '개발을 할 때 내가 하고 있는 것이 맞는지, 혹은 다른 사람들은 어떻게 생각하고 하는지 궁금할 때가 많았습니다. 그래서 같은 목적을 가진 사람들과 지식을 공유하고 공부할 수 있는 환경을 만들고자 했습니다. 프로브 주니어는 동료들과 같이 프로젝트를 진행하면서 자신의 포트폴리오를 만들어나갈 수 있는 기회가 될 것이라 생각합니다.',
       src: memoticon1.publicURL,
       author: '17학번 전병민',
     },
@@ -107,7 +112,7 @@ const Junior = () => {
       className: 'left',
       title: '누구와 같이하면 좋을까요?',
       detail:
-        '개발 공부를 시작하면서 어떻게 개발을 하는지 무엇을 해야 할지 찾는 것이 어렵고, 혼자 공부를 하는 것이 쉽지 않고, 다른 사람과 같이 프로젝트를 해보고 싶어도 같이 할 사람을 찾기가 어려워하고자 하는 의지만 있다면 쉽게 팀원을 구할 수 있는 방법이 있었으면 좋겠다고 생각했습니다.',
+        '개발 공부를 시작하면서 어떻게 개발을 시작하는지, 무엇을 해야 하는지 결정하는 것이 어려웠습니다. 다른 사람과 같이 프로젝트를 해보고 싶어도 주변에서 같이 할 사람을 구하는 것이 쉽지 않았습니다. 프로브 주니어는 하고자 하는 의지만 있다면 쉽게 팀원을 구하고 프로젝트를 빠르게 시작할 수 있는 방법이 되었으면 좋겠습니다.',
       src: memoticon2.publicURL,
       author: '19학번 변수미',
     },
@@ -135,7 +140,8 @@ const Junior = () => {
     },
     {
       title: '03 성장과 발전',
-      content: 'PROB junior 는 계속 성장해요. 디자이너도 모집할 계획이에요.',
+      content:
+        'PROB junior 는 계속 성장할 예정이며, 디자이너도 모집할 계획입니다.',
       src: property3.publicURL,
     },
     {
@@ -246,6 +252,16 @@ const Junior = () => {
         }
       />
       {/* content-1 section */}
+
+      <About
+        imgSrc={junior.publicURL}
+        subtitle={'프로브 주니어를 소개합니다!'}
+        contentTitle={'개발 스터디 그룹'}
+        contentDetail={
+          '2022년에 시작한 프로브 주니어는 프로브레인의 개발 스터디 그룹입니다. 항상 성장과 발전에 대해 고민하고 활발한 소통을 추구합니다. 프로브레인 회원을 포함한 모든 학생들이 가입할 수 있습니다.'
+        }
+      />
+
       <Section
         className="card"
         title="창단 동기"
@@ -258,7 +274,7 @@ const Junior = () => {
       <Section
         className="grid-4"
         title="PROB junior?"
-        subtitle="PROB junior 특징에 대해 알아보아요."
+        subtitle="PROB junior 특징을 소개합니다!"
       >
         {juniorPropertyList}
       </Section>

@@ -74,11 +74,11 @@ const IndexPage = () => {
       }
     `);
 
-  const [loading, setLoading] = useState<boolean>(true);
+  // const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 1500);
+  // }, []);
 
   const activityInfo = [
     {
@@ -162,9 +162,16 @@ const IndexPage = () => {
       url={site?.siteMetadata?.siteUrl}
       image={meta.publicURL}
     >
-      {loading ? <Loading /> : null}
+      {/* {loading ? <Loading /> : null} */}
       <Welcome />
-      <About imgSrc={blueLogo.publicURL} />
+      <About
+        imgSrc={blueLogo.publicURL}
+        subtitle={'PROBRAIN은 어떤 동아리일까요?'}
+        contentTitle={'웹 개발 동아리'}
+        contentDetail={
+          '프로브레인은 개발자를 꿈꾸는 모두를 위한 동아리입니다. 활발한 활동을 추구하며 세미나, 교육, 프로젝트를 통해 훌륭한 FE / BE 개발자를 양성합니다.'
+        }
+      />
       <Section
         className="activity"
         title="ACTIVITY"
