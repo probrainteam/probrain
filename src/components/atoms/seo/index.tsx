@@ -27,7 +27,6 @@ function Seo({ url, title, description, image }: SeoProps) {
         name="google-site-verification"
         content="S9Myi5pYs9AGTgFfHPTz_EN5CYONAq_d_phuEjQR3Z8"
       />
-      <meta name="naver-site-verification" content="" />
 
       <html lang="ko" />
     </Helmet>
