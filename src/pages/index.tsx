@@ -74,11 +74,17 @@ const IndexPage = () => {
       }
     `);
 
-  // const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   // useEffect(() => {
   //   setTimeout(() => setLoading(false), 1500);
   // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeout(() => setLoading(false), 1500);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const activityInfo = [
     {
@@ -162,7 +168,7 @@ const IndexPage = () => {
       url={site?.siteMetadata?.siteUrl}
       image={meta.publicURL}
     >
-      {/* {loading ? <Loading /> : null} */}
+      {loading ? <Loading /> : null}
       <Welcome />
       <About
         imgSrc={blueLogo.publicURL}
