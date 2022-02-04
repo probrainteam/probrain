@@ -76,13 +76,10 @@ const IndexPage = () => {
 
   const [loading, setLoading] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 1500);
-  // }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeout(() => setLoading(false), 1500);
-    }, 1500);
+      setLoading(false);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
