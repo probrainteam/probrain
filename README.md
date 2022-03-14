@@ -17,10 +17,18 @@ Probrain 동아리 와 Probrain에서 진행하는 Probrain junior 스터디 그
 프로브레인은 개발자를 꿈꾸는 모두를 위한 동아리입니다. 활발한 활동을 추구하며 세미나, 교육, 프로젝트를 통해 훌륭한 FE / BE 개발자를 양성합니다.
 
 
+---
 
 ## :link: 배포 링크
 
 https://probrain.site/
+
+ 
+## :pencil2: stack
+
+<img src="https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=Gatsby&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"> [![Built with Emotion](https://camo.githubusercontent.com/77c73715147f8ec38cfc534eafcab6671c46b77401e99681888a8230eac22431/68747470733a2f2f62616467656e2e6e65742f62616467652f6275696c74253230776974682f656d6f74696f6e2f663039306435)](https://emotion.sh/)
+
+
 
  
 
@@ -42,11 +50,7 @@ https://probrain.site/
 
 
 
-## :pencil2: stack
-
-<img src="https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=Gatsby&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"> [![Built with Emotion](https://camo.githubusercontent.com/77c73715147f8ec38cfc534eafcab6671c46b77401e99681888a8230eac22431/68747470733a2f2f62616467656e2e6e65742f62616467652f6275696c74253230776974682f656d6f74696f6e2f663039306435)](https://emotion.sh/)
-
-
+---
 
 
 
@@ -68,7 +72,7 @@ https://probrain.site/
 chrome의 lighthouse 테스트를 진행해 접근성, performance점수를 확인
 
 
-
+---
 ## :camera: 사진 & 디자인 출처
 
 사진  : https://undraw.co/illustrations
