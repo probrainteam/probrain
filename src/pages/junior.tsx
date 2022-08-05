@@ -4,7 +4,7 @@ import Layout from 'components/layout';
 import Registration from 'components/organisms/registration';
 import Section from 'components/organisms/section';
 import ListCard from 'components/organisms/listCard';
-import ShadowCard from 'components/shadowCard';
+import ShadowCard from 'components/organisms/shadowCard';
 import Outro from 'components/organisms/outro';
 import ScrollComponent from 'components/atoms/Scroll';
 import Property from 'components/molecules/property';
