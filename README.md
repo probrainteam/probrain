@@ -21,7 +21,7 @@ Probrain 동아리 와 Probrain에서 진행하는 Probrain junior 스터디 그
 
 ## :link: 배포 링크
 
-https://probrain.site/
+https://probrain.club/
 
  
 ## :pencil2: stack
